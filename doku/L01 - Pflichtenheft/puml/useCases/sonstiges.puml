@@ -1,0 +1,14 @@
+usecase (Ausleihstationen verwalten) as AUV
+usecase (Abrechnungen verwalten) as ABV
+usecase (Im Umkreis nach Fahrzeugen suchen) as UFS
+usecase (Fahrt antreten) as FAT
+usecase (Fahrt abschließen) as FAB
+usecase (Sprache auswählen) as SAW
+
+'------ Verbindungen ----------
+Mitarbeiter -- AUV
+Registrierter -- ABV
+Registrierter -- UFS
+Mitglied -- FAT
+Mitglied -- FAB
+Benutzer -- SAW

@@ -1,0 +1,134 @@
+@startgantt Zeitplan
+language de
+printscale daily zoom 1
+Project starts 2023-5-26
+
+'----- Technische Doku -----'
+[Beginn der Entwicklung] happens 2023-5-26
+
+'[Technische Dokumentation erstellen] starts 2023-5-26 and ends 2023-7-20
+[Technische Dokumentation erstellen] starts at [Beginn der Entwicklung]'s end and ends 2023-7-20
+[Technische Dokumentation erstellen] is colored in #32a852/White
+
+[Modellieren] starts at [Beginn der Entwicklung]'s end
+[Modellieren] lasts 10 days
+[Modellieren] is colored in #32a852/White
+
+'[Beginn der Entwicklung] happens at [Modellieren]'s end
+
+'----- Mindestanforderungen -----'
+[Implementieren der Mindestanforderungen] starts at [Modellieren]'s end
+[Implementieren der Mindestanforderungen] lasts 11 days
+[Implementieren der Mindestanforderungen] is colored in #f2921d/White
+
+[Mitgliedskonto anlegen] starts at [Modellieren]'s end
+[Mitgliedskonto anlegen] lasts 6 days
+[Mitgliedskonto anlegen] is colored in #f2921d/White
+
+[Mitgliedsdaten ändern] starts at [Mitgliedskonto anlegen]'s end
+[Mitgliedsdaten ändern] lasts 3 days
+[Mitgliedsdaten ändern] is colored in #f2921d/White
+
+[Login/Logout] starts at [Mitgliedskonto anlegen]'s end
+[Login/Logout] lasts 2 days
+[Login/Logout] is colored in #f2921d/White
+
+[Neue Buchung hinzufügen] starts at [Modellieren]'s end
+[Neue Buchung hinzufügen] lasts 5 days
+[Neue Buchung hinzufügen] is colored in #f2921d/White
+
+[Buchungen einsehen] starts at [Neue Buchung hinzufügen]'s end
+[Buchungen einsehen] lasts 5 days
+[Buchungen einsehen] is colored in #f2921d/White
+
+[Buchungen löschen] starts at [Neue Buchung hinzufügen]'s end
+[Buchungen löschen] lasts 6 days
+[Buchungen löschen] is colored in #f2921d/White
+
+[Mindestanforderungen] happens at [Implementieren der Mindestanforderungen]'s end
+
+
+'----- Backend -----'
+[Backend fertigstellen] starts at [Implementieren der Mindestanforderungen]'s end
+[Backend fertigstellen] ends 2023-7-7
+[Backend fertigstellen] is colored in #4772ba/White
+
+[Benutzerrechte implementieren] starts at [Implementieren der Mindestanforderungen]'s end
+[Benutzerrechte implementieren] lasts 8 days
+[Benutzerrechte implementieren] is colored in #4772ba/White
+
+[Speicherung der Daten in einer Datenbank] starts at [Implementieren der Mindestanforderungen]'s end
+[Speicherung der Daten in einer Datenbank] lasts 11 days
+[Speicherung der Daten in einer Datenbank] is colored in #4772ba/White
+
+[Passwörter haben Mindestanforderungen] starts at [Implementieren der Mindestanforderungen]'s end
+[Passwörter haben Mindestanforderungen] lasts 7 days
+[Passwörter haben Mindestanforderungen] is colored in #4772ba/White
+
+[Daten verschlüsselt übermitteln] starts at [Implementieren der Mindestanforderungen]'s end
+[Daten verschlüsselt übermitteln] lasts 7 days
+[Daten verschlüsselt übermitteln] is colored in #4772ba/White
+
+[Fahrzeugtypen] starts at [Implementieren der Mindestanforderungen]'s end
+[Fahrzeugtypen] lasts 4 days
+[Fahrzeugtypen] is colored in #4772ba/White
+
+[Tarifarten] starts at [Passwörter haben Mindestanforderungen]'s end
+[Tarifarten] lasts 8 days
+[Tarifarten] is colored in #4772ba/White
+
+[Stornieren einer Buchung] starts at [Fahrzeugtypen]'s end
+[Stornieren einer Buchung] lasts 5 days
+[Stornieren einer Buchung] is colored in #4772ba/White
+
+[Umkreissuche von Fahrzeugen] starts at [Benutzerrechte implementieren]'s end
+[Umkreissuche von Fahrzeugen] lasts 10 days
+[Umkreissuche von Fahrzeugen] is colored in #4772ba/White
+
+[Archivierung der Daten] starts at [Daten verschlüsselt übermitteln]'s end
+[Archivierung der Daten] lasts 4 days
+[Archivierung der Daten] is colored in #4772ba/White
+
+[Anbindung an das bestehende Buchungssystem] starts at [Speicherung der Daten in einer Datenbank]'s end
+[Anbindung an das bestehende Buchungssystem] lasts 10 days
+[Anbindung an das bestehende Buchungssystem] is colored in #4772ba/White
+
+[Adaption an verschiedene Länder und Orte] starts at [Stornieren einer Buchung]'s end
+[Adaption an verschiedene Länder und Orte] lasts 8 days
+[Adaption an verschiedene Länder und Orte] is colored in #4772ba/White
+
+[Fertigstellung des Backends] happens at [Backend fertigstellen]'s end
+
+'----- Frontend -----'
+[Frontend fertigstellen] starts at [Implementieren der Mindestanforderungen]'s end
+[Frontend fertigstellen] ends 2023-7-7
+[Frontend fertigstellen] is colored in #e6a819/White
+
+[Design erstellen] starts at [Implementieren der Mindestanforderungen]'s end
+[Design erstellen] lasts 8 days
+[Design erstellen] is colored in #e6a819/White
+
+[Design implementieren] starts at [Design erstellen]'s end
+[Design implementieren] lasts 13 days
+[Design implementieren] is colored in #e6a819/White
+
+[Fertigstellung des Frontends] happens at [Frontend fertigstellen]'s end
+
+[Präsentation] happens at [Backend fertigstellen]'s end
+
+'----- Doku -----'
+[Verifizieren] starts at [Backend fertigstellen]'s end
+[Verifizieren] lasts 13 days
+[Verifizieren] is colored in #32a852/White
+
+[Technische Dokumentation] happens at [Technische Dokumentation erstellen]'s end
+[Technische Dokumentation] starts at [Technische Dokumentation erstellen]'s end
+
+[Implementierung, Test & Abnahme] happens at [Technische Dokumentation erstellen]'s end
+[Implementierung, Test & Abnahme] starts at [Technische Dokumentation erstellen]'s end
+
+[ ] starts 2023-7-20
+[ ] lasts 13 days
+[ ] is colored in Transparent/Transparent
+hide footbox
+@endgantt

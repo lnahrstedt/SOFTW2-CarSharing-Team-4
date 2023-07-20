@@ -1,0 +1,1 @@
+enum AccountType { MEMBER, MEMBER_EMPLOYEE, EMPLOYEE, ADMIN }

@@ -1,0 +1,172 @@
+\documentclass[a4paper, DIV=calc, listof=flat, headsepline, headinclude, footinclude] {scrartcl}
+
+% Language and Encoding settings
+\usepackage[T1] {fontenc}
+\usepackage[utf8] {inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[normalem]{ulem}
+\usepackage[section]{placeins}
+\usepackage{longtable}
+
+% Utils
+\usepackage{animate}
+\usepackage{aeguill}
+\usepackage{blindtext}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{color}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{paralist}
+\usepackage{scrlayer-scrpage}
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz}
+
+\renewcommand\tabularxcolumn[1]{m{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+% General settings
+\usepackage[left = 2.5cm, right = 2.5cm, top = 3.5cm, bottom = 4cm]{geometry}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\pagestyle{scrheadings}
+
+% Font settings
+\usepackage{lmodern}
+\renewcommand\familydefault{\sfdefault}
+
+% Bibtex settings
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage[backend=biber,
+    style=alphabetic,
+    sortcase=false,
+    maxnames=1,
+    maxbibnames=8,
+    minbibnames=8,
+    urldateusetime=true]{biblatex}
+\addbibresource{libary.bib}
+\DefineBibliographyStrings{german}{andothers = {et al.}}
+\DeclareNameAlias{sortname}{last-first}
+\DeclareNameAlias{default}{last-first}
+\renewcommand*{\multinamedelim}{\addsemicolon\addspace}
+
+% Listings settings
+\usepackage{listings}
+\lstset{language=Java,
+    basicstyle=\small,
+    keywordstyle=\color{blue!80!black!100},
+    identifierstyle=,
+    commentstyle=\color{green!25!black!75},
+    stringstyle=\ttfamily,
+    breaklines=true,
+    showstringspaces=false,
+    frame=single,
+    backgroundcolor=\color{gray!3},
+    numbers=left,
+    numberstyle=\small,
+    columns=fullflexible
+}
+
+% Maths
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{icomma}
+
+% Custom commands
+
+% Checkmarks
+\newcommand{\redcheck}{{\color{red}\checkmark}}
+\newcommand{\bluecheck}{{\color{blue}\checkmark}}
+\newcommand{\greencheck}{{\color{green}\checkmark}}
+
+% Coole horizontale Linie
+\newcommand{\coolelinie}{\par\noindent\rule{\textwidth}{0.4pt}}
+
+% Abkürzung zum Beispiel
+\newcommand{\zb}{z.\ B\@.}
+
+% Abkürzung vergleiche
+\newcommand{\vgl}[1]{(vgl.\ \autoref{#1})}
+\newcommand{\vglZwei}[2]{(vgl.\ \autoref{#1} und \autoref{#2})}
+
+% SideBySidePictures
+\newcommand{\sidebyside}[2]{
+    \begin{figure} [H]
+        \centering
+        \begin{minipage}[b]{0.4\linewidth} % [b] => Ausrichtung an \caption
+            #1
+        \end{minipage}
+        \hspace{.1\linewidth}% Abstand zwischen Bilder
+        \begin{minipage}[b]{0.4\linewidth} % [b] => Ausrichtung an \caption
+            #2
+        \end{minipage}
+    \end{figure}
+}
+
+% Adds \addsubsec
+\makeatletter
+\newcommand*\addsubsec{\secdef\@addsubsec\@saddsubsec}
+\newcommand*{\@addsubsec}{}
+\def\@addsubsec[#1]#2{\subsection*{#2}\addcontentsline{toc}{subsection}{#1}
+\if@twoside\ifx\@mkboth\markboth\markright{#1}\fi\fi
+}
+\newcommand*{\@saddsubsec}[1]{\subsection*{#1}\@mkboth{}{}}
+\makeatother
+
+% Adds \subsubsubsection and \subsubsubsubsection
+\makeatletter
+\newcommand\subsubsubsection{\@startsection{paragraph}{4}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\newcommand\subsubsubsubsection{\@startsection{subparagraph}{5}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\makeatother
+
+% Custom TOCs
+% Codeverzeichnis
+\DeclareNewTOC[
+    type=code,
+    types=code,
+    float,
+    name=Quelltext,
+    listname={Quelltextverzeichnis},
+]{locode}
+\newcommand{\codeautorefname}{Quelltext}
+
+% UML-Verzeichnis
+\DeclareNewTOC[
+    type=uml,
+    types=uml,
+    float,
+    name=UML,
+    listname={UML-Verzeichnis},
+]{louml}
+\newcommand{\eqautorefname}{UML-Diagramm}
+
+% Hyperlinks
+\usepackage[colorlinks,
+    pdfpagelabels,
+    pdfusetitle,
+    pdfstartview = FitH,
+    bookmarksopen = true,
+    bookmarksnumbered = true,
+    linkcolor = black,
+    plainpages = false,
+    hypertexnames = false,
+    urlcolor = black,
+    citecolor = black] {hyperref}
+\usepackage[all]{hypcap}
+
+\begin{document}
+
+    \input{base/titlepage}
+    \input{base/header}
+    \input{base/index}
+
+    \input{document}
+
+    %\input{base/bibliography}
+
+\end{document}

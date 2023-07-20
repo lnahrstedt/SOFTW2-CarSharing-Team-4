@@ -1,0 +1,105 @@
+@startuml
+
+'skinparam linetype ortho
+
+entity Account {
+    * Id : Text
+    --
+    * User_Id_FK : Text
+    * EmailAddress : Text
+    * PhoneNumber : Text
+    * Type : Text
+    * FareType : Text
+}
+
+entity Country {
+    * Code : Text
+    --
+    * Name : Text
+}
+
+entity City {
+    * Id : Text
+    --
+    * Country_FK : Text
+    * Name : Text
+}
+
+entity Area {
+    * Id : Text
+    --
+    * City_Id_FK : Text
+    * Postal_Code : Text
+}
+
+entity User {
+    * Id : Text
+    --
+    * Area_Id_FK : Text
+    * FirstName : Text
+    * LastName : Text
+    * Street : Text
+    * Birthday : Date
+}
+
+entity Employee {
+    * employeeId : Text
+    --
+    * User_Id_FK : Text
+}
+
+entity Driver {
+    * driverId : Text
+    --
+    * User_Id_FK : Text
+    * licenseId : Text
+}
+
+entity Reservation{
+    * Id : Text
+    --
+    * Vehicle_Id_FK : Text
+    * Driver_Id_FK : Text
+    * Price : Number
+    * Time : Date
+}
+
+entity Vehicle {
+    * Id : Text
+    --
+    * Detail_Id_FK : Text
+    * Brand : Text
+    * Model : Text
+}
+
+entity Configuration {
+    * Id : Text
+    --
+    * Equipment_Id_FK : Text
+    * Category : Text
+    * Type : Text
+    * Transmission : Text
+    * Fuel : Text
+}
+
+entity Equipment {
+    * Id : Text
+    --
+    * AC : Boolean
+    * NAVIGATION : Boolean
+    * CRUISE_CONTROL : Boolean
+    * DRIVING_ASSISTANT : Boolean
+}
+
+
+Account }|-|| User
+User ||--o| Employee
+User ||--o| Driver
+Driver ||--o{ Reservation
+User }|--|| Area
+Vehicle ||--o{ Reservation
+Vehicle }o--|| Configuration
+Configuration }o-|| Equipment
+Area }|--|| City
+City }|-|| Country
+@enduml

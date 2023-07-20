@@ -1,0 +1,63 @@
+@baseUrl = http://localhost:8080
+
+GET {{baseUrl}}/driver/exist/HB-X-12345
+
+###
+POST {{baseUrl}}/account
+Content-Type: application/json
+
+{
+  "email": "test@test.de",
+  "phone": "123456789",
+  "password": "x"
+  "accountType": {
+    "name": "MEMBER"
+  },
+  "user": {
+    "firstName": "Max",
+    "lastName": "Mustermann",
+    "dateOfBirth": "2018-03-03",
+    "placeOfBirth": {
+      "name": "Musterstadt"
+    },
+    "creationDate": "2018-03-03",
+    "address": {
+      "street": "Musterstraße 1",
+      "location": {
+        "city": {
+          "name": "Musterstadt"
+        },
+        "postalCode": "1234"
+      },
+      "country": {
+        "code": "DE"
+      }
+    }
+  }
+}
+}
+
+###
+GET {{baseUrl}}/account/1
+
+###
+GET {{baseUrl}}/user/1
+
+###
+DELETE {{baseUrl}}/user/1
+
+###
+GET {{baseUrl}}/account/1/user
+
+###
+POST {{baseUrl}}/driver
+Content-Type: application/json
+
+{
+  "licenseId": "HB-X-12345",
+  "userId": 1,
+  "fareTypeId": 1
+}
+
+###
+GET {{baseUrl}}/driver

@@ -1,0 +1,79 @@
+\textbf{Was testen wir?}\smallskip
+
+Um sicherzustellen, dass alle vom Backend bereitgestellten Schnittstellen ordnungsgemäß funktionieren,
+haben wir uns dazu entschlossen, alle Schnittstellen zu testen.
+Zudem haben wir festgelegt, dass wir im Frontend die Mindestanforderungen testen.
+
+\bigskip
+\textbf{Welche Teststrategie wenden wir an?}\smallskip
+
+Für die Backendtests haben wir uns für den ausschließlichen Einsatz von automatisierten Integrationstests entschieden.
+Der Hauptgrund für diese Entscheidung ist, dass diese eine ausgewogene Balance zwischen Codeabdeckung und der Prüfung der korrekten Kommunikation zwischen den verschiedenen Schichten bieten.
+Für komplexere Methoden (zum Beispiel einige Update-Methoden), die typischerweise durch Unit-Tests abgedeckt werden sollten, haben wir uns für einen Kompromiss entschieden.
+Solche Methoden werden durch eine hinreichende Anzahl von Integrationstests, die auch Randfälle berücksichtigen, auf mögliche Fehlfunktionen hin untersucht.\medskip
+
+Aufgrund zeitlicher Begrenzungen haben wir uns dazu entschlossen, die Funktionalität des Frontends ausschließlich durch manuelle Tests zu prüfen.
+
+\bigskip
+\textbf{Wie testen wir? Was ist unser Workflow?}\smallskip
+
+Nach der Implementierung einer Schnittstelle haben wir diese unmittelbar getestet.
+Hierfür haben wir Testszenarien nach der \enquote{Given-When-Then}-Methode entwickelt
+und anschließend jedes Szenario in einzelne Tests aufgeteilt.
+Bei jeder neuen Version wurden alle Tests ausgeführt.
+Falls ein Test fehlschlug, konnte der Fehler aufgrund der atomaren Natur schnell lokalisiert und behoben werden. \medskip
+
+Für die Testung des Frontends haben wir uns ebenfalls Szenarien nach der \enquote{Given-When-Then}-Methodik ausgedacht und diese im Nachhinein manuell durchgetestet.
+
+\bigskip
+\textbf{Wie dokumentieren wir?}\smallskip
+
+Wie zuvor angeführt, ist es die Aufgabe jedes Entwicklers, nach der Umsetzung einer Schnittstelle Testfälle dafür zu erstellen.
+Wir haben uns darauf verständigt, diese Testfälle sorgfältig zu protokollieren, um deren Nachvollziehbarkeit zu gewährleisten.
+Dabei galt es, das folgende Schema zu befolgen: \bigskip
+
+\resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|cl|cl|cl|l|}
+        \hline
+        &
+        \multicolumn{2}{c|}{Given} &
+        \multicolumn{2}{c|}{When} &
+        \multicolumn{2}{c|}{Then} &
+        \\ \hline
+        \multicolumn{1}{|c|}{Testnummer} &
+        \multicolumn{1}{c|}{Beschreibung} &
+        \multicolumn{1}{c|}{Rolle} &
+        \multicolumn{1}{c|}{Request Method} &
+        \multicolumn{1}{c|}{Endpunkt} &
+        \multicolumn{1}{c|}{erwarteter   Statuscode} &
+        \multicolumn{1}{c|}{erwartete   Ausgabe im Body} &
+        \multicolumn{1}{c|}{OK?} \\ \hline
+        &
+        \multicolumn{1}{l|}{} &
+        &
+        \multicolumn{1}{l|}{} &
+        &
+        \multicolumn{1}{l|}{} &
+        &
+        \\ \hline
+    \end{tabular}%
+}
+
+\bigskip
+\textbf{Welche Werkzeuge nutzten wir zur Durchführung der Tests?}\smallskip
+
+Für die Durchführung unserer automatisierten Tests haben wir eine Kombination aus verschiedenen Bibliotheken verwendet.
+Einige dieser Bibliotheken sind bereits integraler Bestandteil von Spring Boot.
+Spring Boot bietet außerdem die Möglichkeit, zu Testzwecken eine reduzierte Version der Anwendung unter einem anderen Port zu starten.
+Zur Steuerung der Testreihenfolge haben wir Annotationen aus der \enquote{JUnit 5} Bibliothek verwendet.
+Die Integrationstests wurden mithilfe der Bibliothek \enquote{RESTAssured} durchgeführt, welche alle erforderlichen Methoden zur Simulation von API-Anfragen nach der Methodik \enquote{Given-When-Then} bereitstellt.
+Schließlich verwendeten wir Hamcrest, um die tatsächlichen Rückgabewerte mit den erwarteten Ergebnissen abzugleichen.
+
+\bigskip
+\textbf{Benötigen wir Testdaten? Wenn ja, wie generieren wir solche?}\smallskip
+
+Einige unserer Tests, wie zum Beispiel das Löschen eines Accounts, setzen voraus, dass bereits Accounts in der Datenbank vorhanden sind.
+Daher war es erforderlich, das Vorhandensein solcher Daten zu simulieren.
+Hierfür haben wir den Dienst \enquote{Mockaroo} in Anspruch genommen.
+\enquote{Mockaroo} ist ein Online-Tool, das entwickelt wurde, um realistische Testdaten in verschiedenen Formaten (wie CSV, JSON, SQL und Excel) zu generieren.
+Vor der Durchführung des ersten Tests haben wir all diese Daten in die Datenbank eingepflegt, um eine adäquate Testumgebung zu schaffen.

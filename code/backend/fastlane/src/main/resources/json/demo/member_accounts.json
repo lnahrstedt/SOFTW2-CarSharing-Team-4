@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1GD01ZCG8EF622176",
+    "typeName": "JUNIOR",
+    "email": "junior@customer.com",
+    "password": "123Password!",
+    "phone": "+14669171174",
+    "firstName": "Junior",
+    "lastName": "Customer",
+    "dateOfBirth": "2000-01-01",
+    "placeOfBirth": "Bremen",
+    "street": "Flughafenallee 10",
+    "city": "Bremen",
+    "postalCode": "28199",
+    "countryCode": "DE"
+  },
+  {
+    "id": "WA1VFBFL6DA894145",
+    "typeName": "COMFORT",
+    "email": "comfort@customer.com",
+    "password": "123Password!",
+    "phone": "+14669171174",
+    "firstName": "Comfort",
+    "lastName": "Customer",
+    "dateOfBirth": "2000-01-01",
+    "placeOfBirth": "Bremen",
+    "street": "Flughafenallee 10",
+    "city": "Bremen",
+    "postalCode": "28199",
+    "countryCode": "DE"
+  },
+  {
+    "id": "SCFFDEDN0CG714225",
+    "typeName": "PREMIUM",
+    "email": "premium@customer.com",
+    "password": "123Password!",
+    "phone": "+14669171174",
+    "firstName": "Premium",
+    "lastName": "Customer",
+    "dateOfBirth": "2000-01-01",
+    "placeOfBirth": "Bremen",
+    "street": "Flughafenallee 10",
+    "city": "Bremen",
+    "postalCode": "28199",
+    "countryCode": "DE"
+  }
+]

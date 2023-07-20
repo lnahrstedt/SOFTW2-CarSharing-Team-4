@@ -1,0 +1,9 @@
+usecase (Login)
+usecase (Logout)
+
+'---- Verbindungen -------
+(Login) -- Gast
+(Logout) -- Registrierter
+
+(Login) -- Authentifizierungsdienstleister
+(Logout) -- Authentifizierungsdienstleister

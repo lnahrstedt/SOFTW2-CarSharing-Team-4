@@ -1,0 +1,44 @@
+usecase MitgliedskontoAnlegen as "Mitgliedskonto anlegen
+--
+**extension points**
+Nicht vor Ort
+Mitarbeiter sein"
+
+usecase (In Filiale) as (MitgliedKontoVorOrt)
+usecase (Nicht in Filiale) as (MitgliedKontoNichtVorOrt)
+
+usecase (Konto zu Mitarbeitermitgliedskonto umwandeln) as (MitgliedMitarbeiterFreischalten)
+
+usecase (Mitarbeiterzugang anlegen) as (MitarbeiterkontoAnlegen)
+
+usecase (Tarif wählen) as (Tarif)
+
+'------ Verbindungen ----------
+(MitgliedskontoAnlegen) <|-- (MitgliedKontoNichtVorOrt)
+(MitgliedskontoAnlegen) <|-- (MitgliedKontoVorOrt)
+
+'------ Notiz ----------
+note "Vorbedingungen:\n- über 18\n- besitzt Führerschein" as VorbedingungMitgliedskontoAnlegenNotiz
+
+'------ Verbindungen ----------
+Gast -- VorbedingungMitgliedskontoAnlegenNotiz
+VorbedingungMitgliedskontoAnlegenNotiz -- (MitgliedskontoAnlegen)
+
+Admin -- (MitarbeiterkontoAnlegen)
+Admin -- MitgliedMitarbeiterFreischalten
+
+Mitarbeiter -- (MitgliedKontoVorOrt)
+Identifizierungsdienstleister -- (MitgliedKontoNichtVorOrt)
+
+'(MitgliedskontoAnlegen) -- Datensicherheitsdienstleister
+
+(MitgliedskontoAnlegen) <.. MitgliedMitarbeiterFreischalten : " <<extends>>"
+note top on link
+Bedingung:
+Ist Mitarbeiter?
+end note
+
+(MitgliedskontoAnlegen) -- SCHUFA
+
+(MitgliedskontoAnlegen) ..> (Tarif) : " <<include>>"
+(Tarif) -- Registrierter

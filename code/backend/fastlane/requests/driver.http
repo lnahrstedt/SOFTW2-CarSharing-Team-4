@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:8080/driver
+
+GET {{baseUrl}}
+
+###
+GET {{baseUrl}}/2C3CK6CT4AH066987
+
+###
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "licenseId": "43",
+  "user": {
+    "firstName": "Ceddy",
+    "lastName": "Scharnke",
+    "dateOfBirth": "2014-01-01",
+    "address": {
+      "street": "Pappelweg 5",
+      "location": {
+        "city": {
+          "name": "Schwanewede"
+        },
+        "postalCode": {
+          "code": "28790"
+        },
+        "country": {
+          "code": "DE"
+        }
+      }
+    }
+  }
+}

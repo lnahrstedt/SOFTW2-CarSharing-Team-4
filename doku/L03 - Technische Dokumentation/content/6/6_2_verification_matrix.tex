@@ -1,0 +1,76 @@
+Im Folgenden finden sie ein umfassende Tabelle, die alle entweder im Frontend oder im
+Backend getesteten Anforderungen enthält.
+Des Weiteren wird in den Spalten \enquote{Testnummer Backend} und \enquote{Testnummer Frontend} die Nummer
+des jeweiligen Tests erfasst.
+Die Nummern für die Backend Tests sind in \hyperref[subsec:testfaelle_backend]{Testfälle Backend} wiederzufinden.
+Die Nummern der Frontend Tests sind in \hyperref[subsec:testfaelle_frontend]{Testfälle Frontend} zu finden.
+
+\begin{longtable}{|m{2cm}|m{6.5cm}|m{2.5cm}|m{2.5cm}|}
+    \hline
+    \textbf{ID} & \textbf{Beschreibung} & \textbf{Testnummer Backend} & \textbf{Testnummer Frontend} \\
+    \hline
+    FA-5 & Mitgliedskonten dürfen nur angelegt werden, wenn die Person mindestens 18 Jahre alt ist & 2 & 2 \\
+    \hline
+    FA-6 & Die Anwendung soll über eine URL erreichbar sein & Durch alle Tests gewährleistet & - \\
+    \hline
+    FA-29 & Mitgliedskonten müssen durch einen Mitglied angelegt werden können & 54 & 1 \\
+    \hline
+    FA-30 & Ein Admin muss Mitarbeiterzugänge anlegen können & 61 & - \\
+    \hline
+    FA-32 & Mitgliedsdaten (außer Kundennummer \& Identifikationsdaten) müssen durch einen Mitarbeiter geändert werden können & 16 & - \\
+    \hline
+    FA-33 & Mitgliedsdaten (außer Kundennummer \& Identifikationsdaten) müssen durch ein Mitglied geändert werden können & 17 & 15 \\
+    \hline
+    FA-34 & Ein Mitglied muss sich einloggen können & 28 & 3 \\
+    \hline
+    FA-35 & Ein Mitarbeiter muss sich einloggen können & 28 & 3 \\
+    \hline
+    FA-36 & Ein Admin muss sich einloggen können & 28 & 3 \\
+    \hline
+    FA-37 & Ein Mitglied muss sich ausloggen können & - & 5 \\
+    \hline
+    FA-38 & Ein Mitarbeiter muss sich ausloggen können & - & 5 \\
+    \hline
+    FA-39 & Ein Admin muss sich ausloggen können & - & 5 \\
+    \hline
+    FA-40 & Neue Buchungen müssen durch ein Mitglied erstellt werden können & 85 & 7 \\
+    \hline
+    FA-41 & Neue Buchungen müssen durch einen Mitarbeiter erstellt werden können & 87 & - \\
+    \hline
+    FA-42 & Buchungen müssen von einem Mitglied eingesehen werden können & 66 & 10, 12 \\
+    \hline
+    FA-43 & Buchungen müssen von einem Mitarbeiter eingesehen werden können & 65 & 10, 12 \\
+    \hline
+    FA-44 & Buchungen müssen von einem Mitglied storniert werden können & 104 & 11 \\
+    \hline
+    FA-45 & Buchungen müssen von einem Mitarbeiter storniert werden können & 105 & 11 \\
+    \hline
+    FA-46 & Ein Mitglied soll einen Tarif wählen können & 54,17 & 1, 15 \\
+    \hline
+    FA-50 & Ein Mitarbeiter soll Autos aus dem Fuhrpark bearbeiten können & 135 & - \\
+    \hline
+    FA-51 & Ein Mitarbeiter soll Autos aus dem Fuhrpark entfernen können & 139 & - \\
+    \hline
+    FA-57 & Buchungen müssen von einem Admin eingesehen werden können & 64 & 10, 12 \\
+    \hline
+    FA-64 & Vergangene Buchungen sollen durch ein Mitglied einsehbar sein & 66 & 10, 12 \\
+    \hline
+    FA-65 & Vergangene Buchungen sollen durch einen Mitarbeiter einsehbar sein & 65 & 10, 12 \\
+    \hline
+    FA-67 & Ein Mitarbeiter soll Autos dem Fuhrpark hinzufügen können & 130 & - \\
+    \hline
+    FA-68 & Buchungen müssen von einem Admin storniert werden können & 106 & 11 \\
+    \hline
+    FA-69 & Vergangene Buchungen sollen durch einen Admin einsehbar sein & 64 & 10, 12 \\
+    \hline
+\end{longtable}
+\label{tab:verifikations_matrix}
+
+Im Rahmen der Testphase wurden insgesamt 140 automatisierte Integrationstests und 16 manuelle Tests durchgeführt.
+Die Verifikationsmatrix dokumentiert die Erfüllung der genannten Anforderungen, wobei einige Anforderungen ausschließlich im Backend und nicht im Frontend umgesetzt wurden.
+Des Weiteren enthält die Verifaktionsmatrix Verweise auf die automatisierten Integrationstests des Backends sowie die manuellen Tests des Frontends.
+Zusätzlich zu den in der Verifikationsmatrix aufgeführten Tests wurden weitere Testfälle durchgeführt.
+Bei diesen Testfällen handelte es sich hauptsächlich um Grenzfall- und Sicherheitstests, die nicht eindeutig einer spezifischen Anforderung zugeordnet werden konnten.
+Eine detaillierte Auflistung der Tests befindet sich in den Abschnitten \hyperref[subsec:testfaelle_backend]{Testfälle Backend}
+und \hyperref[subsec:testfaelle_frontend]{Testfälle Frontend} im Anhang.
+Alle durchgeführten Tests waren erfolgreich und belegen somit die Funktionsfähigkeit des Systems für die genannten Testfälle.

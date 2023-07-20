@@ -1,0 +1,27 @@
+Für die Lauffähigkeit der Software werden mehrere Schnittstellen benötigt, die dem System interne
+und externe Funktionalitäten zur Verfügung stellen müssen.
+Eine interne Schnittstelle muss zwischen dem System und dem älteren Buchhaltungssystem liegen, damit auf die
+Buchungsdaten der Kunden zugegriffen werden kann.
+Da das Buchhaltungssystem bereits vorhanden ist und somit bereits Ihre Anforderungen erfüllt, fallen für die
+Erweiterung keine neuen Anforderungen an.
+Zusätzlich müssen die Daten über die interne Schnittstelle zwischen Frontend und Backend verschlüsselt übertragen werden. \medskip
+
+Aufgrund der Tatsache, dass wir für die Aspekte Zahlung, Identifikation, Authentifizierung und Bonitätsprüfung Drittunternehmen
+beschäftigen, werden hierfür externe Schnittstellen benötigt.
+Zusätzlich wird für die persistente Speicherung der Daten ein Datenbankdienstleister herangezogen.
+Somit fallen für diese Schnittstellen besondere Anforderungen an:
+\begin{itemize}
+    \item Alle Dienstleister müssen sicherstellen, dass die übertragenden Daten nicht für Dritte einsehbar sind.
+    \item Alle Dienstleister müssen sicherstellen, dass ihre Dienste immer zu den gegebenen Zeiten erreichbar sind.
+    \item Der Identifikationsdienstleister muss sicherstellen,
+    dass die Identität des Benutzers gemäß deutschen Richtlinien korrekt verifiziert wird.
+    \item Der Authentifizierungsdienstleister muss sicherstellen, dass bei einem ein- und ausloggen aus dem System das
+    korrekte Benutzerkonto geladen wird.
+    \item Der Zahlungsdienstleister muss sicherstellen, dass die Zahlung gemäß deutschen Richtlinien vonstattengeht und
+    dass die Zahlung des Kunden ordnungsgemäß weitergeleitet werden.
+    \item Der Datenbankdienstleister muss benötigte Daten mit einer ausreichender geschwindigkeit zur Verfügung stellen.
+\end{itemize} \medskip
+
+Neben den hinzugezogenen Dienstleistern ist außerdem eine Schnittstelle für GPS-Tracker und Kartenleser vorgesehen.
+Beide dieser Geräte werden in den Autos verbaut und benötigen einen Internetzugriff, um mit dem System kommunizieren
+zu können.

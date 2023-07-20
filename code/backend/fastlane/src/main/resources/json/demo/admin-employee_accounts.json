@@ -1,0 +1,32 @@
+[
+  {
+    "id": "0x89ff187cdf800024fa7aab95ed31249ed5838261",
+    "typeName": "ADMIN",
+    "email": "admin@flojc.com",
+    "password": "123Password!",
+    "phone": "+14669171174",
+    "firstName": "Admin",
+    "lastName": "Fastlane",
+    "dateOfBirth": "2000-01-01",
+    "placeOfBirth": "Bremen",
+    "street": "Flughafenallee 10",
+    "city": "Bremen",
+    "postalCode": "28199",
+    "countryCode": "DE"
+  },
+  {
+    "id": "0x1fd4f33b2ee7cbdeb4fc4242d80d3afae7cb9ec7",
+    "typeName": "EMPLOYEE",
+    "email": "employee@flojc.com",
+    "password": "123Password!",
+    "phone": "+14669171174",
+    "firstName": "Employee",
+    "lastName": "Fastlane",
+    "dateOfBirth": "1996-05-10",
+    "placeOfBirth": "Bremen",
+    "street": "Flughafenallee 10",
+    "city": "Bremen",
+    "postalCode": "28199",
+    "countryCode": "DE"
+  }
+]

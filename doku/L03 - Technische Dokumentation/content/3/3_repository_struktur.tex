@@ -1,0 +1,30 @@
+Das Entwicklerteam nutzt Atlassian-Produkte, darunter Confluence und Jira, und hat sich daher für Bitbucket als Versionsverwaltung entschieden.
+Die Entscheidung basiert auf den Vorteilen, dass erstellte Aufgaben über Jira direkt als Branches in Bitbucket erstellt werden können.
+Dies optimiert die Projektverwaltung und Planung, was zu Zeitersparnis und gesteigerter Effizienz führt.
+Bitbucket fungiert ausschließlich als Hosting-Plattform für Git-Repositories.
+Die Entwickler arbeiten dabei mit sogenannten Branches im Git-Repository.
+Wurde ein Branch auf Bitbucket erstellt, so konnte von diesem lokal eine Kopie angelegt werden, um Änderungen zu speichern und anschließend in das Git-Repository hochzuladen.
+Für jeden erstellten Task in Jira wurde auf Bitbucket ein eigener Feature-Branch erstellt.
+Dadurch wird ermöglicht, dass die Aufgaben unabhängig voneinander bearbeitet werden können und das Risiko schwerwiegender Fehler, beispielsweise durch Merge-Konflikte auf dem Master-Branch, verringert wird.
+
+Um einen Merge auf den Master-Branch durchzuführen, war es erforderlich, einen Merge-Request im jeweiligen Feature-Branch zu erstellen.
+Auf dem Master-Branch wurden ausschließlich funktionierende Features gepusht und zusammengeführt.
+Dadurch wurde sichergestellt, dass nur vollständig getestete und funktionsfähige Änderungen im Master-Branch vorhanden sind.\\
+
+Das Repository ist in den Sektionen \textbf{code} und \textbf{doku} unterteilt.
+Diese Aufteilung ermöglicht eine strukturierte Verwaltung der Projektressourcen und eine klare Trennung zwischen der Dokumentation und dem eigentlichen Code.
+Dadurch wird die Zusammenarbeit und Entwicklung erleichtert.
+In der Sektion \enquote{doku} befinden sich die bearbeiteten Laboraufgaben.
+Die Sektion \enquote{code} ist unterteilt in frontend und backend.  \\
+Für das \enquote{Frontend} wurde \enquote{Flutter} verwendet, diesbezüglich gibt es Unterordner für verschiedene Plattformen, wie Ios, Android und windows.
+In dem Ordner \enquote{lib} befinden sich alle relevanten Dateien und Ordner für die Entwicklung der Benutzeroberfläche.
+Die Aufteilung erfolgt in die Ordner \enquote{Constants}, \enquote{control}, \enquote{data}, \enquote{model}, \enquote{widgets} und der Main-Datei \enquote{mainDashboard}.    \\
+Die Sektion \enquote{bakend} enthält einen Ordner \enquote{Entwurf} in dem alle Entwürfe hinterlegt sind und den Ordner \enquote{fastlane}
+in dem alle Dateien und Ordner für die Entwicklung der serverseitigen Logik vorhanden sind.
+Die wichtigsten Daten in diesem Ornder sind die Datenbank, ein Dockerfile, ein Ordner namens \enquote{requests} zum Testen der Schnittstellen und der Source-Ordner \enquote{src}.
+Im Source-Ornder befindet sich neben dem Main-Ornder ein Test-Ordner, in dem unter anderem alle Kontroller getestet werden.
+Der Main-Ordner enthält die ausführbare Datei \enquote{FastlaneApplication} sowie Ordner, die alle Funktionen und Daten für das Backend beinhalten.
+
+
+
+

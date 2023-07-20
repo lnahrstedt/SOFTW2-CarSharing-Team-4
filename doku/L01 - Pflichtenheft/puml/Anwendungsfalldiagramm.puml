@@ -1,0 +1,23 @@
+@startuml anwendungsfalldiagramm
+'https://plantuml.com/use-case-diagram
+
+'------ Akteure ------
+
+!include actors.puml
+
+'------ Anwendungsfaelle ------
+
+package "Carsharing Anwendung" {
+
+!include useCases/kontoAnlegen.puml
+!include useCases/buchungVerwalten.puml
+!include useCases/kontendatenVerwalten.puml
+!include useCases/login_logout.puml
+!include useCases/bezahlen.puml
+!include useCases/fahrzeugVerwalten.puml
+!include useCases/fuhrparkVerwalten.puml
+!include useCases/sonstiges.puml
+
+}
+
+@enduml

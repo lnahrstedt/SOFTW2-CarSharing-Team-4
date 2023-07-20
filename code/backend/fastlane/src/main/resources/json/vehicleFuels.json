@@ -1,0 +1,74 @@
+﻿[
+  {
+    "id": "R",
+    "name": "Unspecified Fuel/Power With AC"
+  },
+  {
+    "id": "N",
+    "name": "Unspecified Fuel/Power Without AC"
+  },
+  {
+    "id": "D",
+    "name": "Diesel"
+  },
+  {
+    "id": "Q",
+    "name": "Diesel No AC"
+  },
+  {
+    "id": "H",
+    "name": "Hybrid AC"
+  },
+  {
+    "id": "I",
+    "name": "Hybrid No AC"
+  },
+  {
+    "id": "E",
+    "name": "Electric AC"
+  },
+  {
+    "id": "C",
+    "name": "Electric No AC"
+  },
+  {
+    "id": "L",
+    "name": "LPG/Compressed Gas AC"
+  },
+  {
+    "id": "S",
+    "name": "Strom"
+  },
+  {
+    "id": "A",
+    "name": "Hydrogen AC"
+  },
+  {
+    "id": "B",
+    "name": "Benzin"
+  },
+  {
+    "id": "M",
+    "name": "Multi Fuel/Power AC"
+  },
+  {
+    "id": "F",
+    "name": "Multi fuel/power No AC"
+  },
+  {
+    "id": "V",
+    "name": "Petrol AC"
+  },
+  {
+    "id": "Z",
+    "name": "Petrol No AC"
+  },
+  {
+    "id": "U",
+    "name": "Ethanol AC"
+  },
+  {
+    "id": "X",
+    "name": "Ethanol No AC"
+  }
+]

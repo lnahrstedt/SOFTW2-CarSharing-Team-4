@@ -1,0 +1,65 @@
+\begin{table}[H]
+    \centering
+    \caption{Anwendungsfallbeschreibung zu: \emph{Mitgliedskonto anlegen}}
+    \label{tab:anwendungsfallbeschreibung_mitgliedskonto_anlegen}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \toprule
+        \textbf{Anwendungsfall}           &  [UC04]                            \\
+        \hline
+        \textbf{Name}                     & Mitgliedskonto anlegen                           \\
+        \hline
+        \textbf{Initiierender Akteur}     & Gast                           \\
+        \hline
+        \textbf{Weitere Akteure}          & Mitarbeiter oder Identifizierungsdienstleister, SCHUFA          \\
+        \hline
+        \textbf{Kurzbeschreibung} & ein Gast legt ein Konto vor Ort mit einem Mitarbeiter
+        oder Online, bzw. telefonisch mithilfe von Dienstleistern an \\
+        \hline
+        \textbf{Vorbedingung}             & der Gast muss mindestens 18 Jahre alt sein \\
+        \hline
+        \textbf{Nachbedingung}            & der Gast ist ein Mitglied \\
+        \hline
+        \textbf{Ablauf} &
+        \begin{itemize}
+            \item Online
+            \begin{enumerate}
+                \item Der Gast gibt die Startseite des Carsharing-Unternehmens im Browser ein
+                \item Auf der Homepage klickt der Gast auf ``Mitglied werden''
+                \item Der Gast gibt seine Personaldaten ein und wird durch einen Identifizierungsdienstleister bestätigt
+                \item Es folgt eine Bonitätsprüfung durch die SCHUFA
+                \item Sind alle Daten korrekt wählt der Gast einen Tarif
+            \end{enumerate}
+        \end{itemize}\\
+        \hline
+        \textbf{Alternativen}             &
+        \begin{itemize}
+            \item In einer Filiale
+            \begin{enumerate}
+                \item Der Gast spricht einen Mitarbeiter bezüglich des Mitgliedskontos an
+                \item Der Mitarbeiter legt dem Gast ein Mitgliedskonto an und trägt die Personalien ein
+                \item Es folgt eine Bonitätsprüfung durch die SCHUFA
+                \item Sind alle Daten korrekt wählt der Gast einen Tarif
+                \item Der Gast legt ein Password fest
+            \end{enumerate}
+            \item Telefonisch
+            \begin{enumerate}
+                \item Der Gast spricht den Kundenservice bezüglich des Mitgliedskontos an
+                \item der Mitarbeiter legt dem Gast ein Mitgliedskonto an und trägt die Personalien ein
+                \item Es folgt eine Bonitätsprüfung durch die SCHUFA
+                \item Sind alle Daten korrekt wählt der Gast einen Tarif aus
+                \item dem Kunden wird ein Initialpasswort postalisch übermittelt
+            \end{enumerate}
+        \end{itemize}\\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Ausnahmen}                & N/A                                \\
+\hline
+\textbf{Benutzte Anwendungsfälle} & Tarif wählen, in Filiale anlegen, nicht in Filiale anlegen           \\
+\hline
+\textbf{Datenanforderungen}       & Personalien, ggf. Führerschein \\
+\bottomrule
+\end{tabularx}

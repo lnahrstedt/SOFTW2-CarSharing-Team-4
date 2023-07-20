@@ -1,0 +1,14 @@
+usecase (Buchung verwalten) as BUV
+usecase BUS as "Buchung stornieren
+--
+**extension points**
+Tarif deckt Stornierung nicht"
+
+'------ Vererbungen ----------
+'(Buchung anlegen) -up-|> BUV
+'(Buchungen einsehen) -up-|> BUV
+BUS -up-|> BUV
+'(Buchung verlängern) -up-|> BUV
+
+'------ Verbindungen ----------
+Registrierter - BUV

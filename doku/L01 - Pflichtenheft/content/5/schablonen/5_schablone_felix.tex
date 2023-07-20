@@ -1,0 +1,37 @@
+\begin{table}[H]
+    \centering
+    \caption{Anwendungsfallbeschreibung zu: \emph{Bezahlen}}
+    \label{tab:anwendungsfallbeschreibung_bezahlen}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \toprule
+        \textbf{Anwendungsfall}           & [UC18]                             \\
+        \hline
+        \textbf{Name}                     & Bezahlen                           \\
+        \hline
+        \textbf{Initiierender Akteur}     & Mitglied                           \\
+        \hline
+        \textbf{Weitere Akteure}          & Zahlungsdienstleister              \\
+        \hline
+        \textbf{Kurzbeschreibung} & Das Mitglied begleicht eine offene Rechnung.
+        Der Zahlungsprozess wird von einem Dienstleister abgewickelt. \\
+        \hline
+        \textbf{Vorbedingung}             & Es liegt eine offene Rechnung vor. \\
+        \hline
+        \textbf{Nachbedingung}            & Die offene Rechnung ist beglichen. \\
+        \hline
+        \textbf{Ablauf} &
+        \begin{enumerate}
+            \item Das Mitglied navigiert im User-Interface zur Zahlungsansicht.
+            \item Das Mitglied wird an den Zahlungsdienstleister weitergeleitet, welcher die Zahlung abwickelt.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternativen}             & N/A                                \\
+        \hline
+        \textbf{Ausnahmen}                & N/A                                \\
+        \hline
+        \textbf{Benutzte Anwendungsfälle} & N/A                                \\
+        \hline
+        \textbf{Datenanforderungen}       & Buchungsdaten                      \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

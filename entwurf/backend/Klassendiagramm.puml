@@ -1,0 +1,155 @@
+@startuml Klassendiagramm
+
+
+class Account {
+    - long accountId
+    - User user
+    - String emailAddress
+    - String phoneNumber
+    - AccountType accountType
+    - FareType fareType
+}
+
+class User {
+    - long userId
+    - String firstName
+    - String lastName
+    - Address address
+}
+
+class Address{
+    - String street
+    - String postalCode
+    - String city
+    - String country
+}
+
+enum AccountType {
+    + ADMIN
+    + MEMBER
+    'Bonus
+    + MEMBER_EMPLOYEE
+    + EMPLOYEE
+}
+
+
+class Reservation {
+    - long id
+    - long vehicleId
+    - long accountId
+    - BigDecimal price
+    - LocaleDateTime timestamp
+}
+
+class Vehicle {
+    - long id
+    - String brand
+    - String model
+    - Configuration configuration
+}
+
+class Configuration {
+    - Category category
+    - Type type
+    - Transmission transmission
+    - Fuel fuel
+    - List<Equipment> equipmentOfVehicle
+}
+
+enum Equipment {
+    + AC
+    + NAVIGATION
+    + CRUISE_CONTROL
+    + DRIVING_ASSISTANT
+}
+
+enum Category {
+    + MINI
+    + MINI_ELITE
+    + ECONOMY
+    + ECONOMY_ELITE
+    + COMPACT
+    + COMPACT_ELITE
+    + INTERMEDIATE
+    + INTERMEDIATE_ELITE
+    + STANDARD
+    + STANDARD_ELITE
+    + FULLSIZE
+    + FULLSIZE_ELITE
+    + PREMIUM
+    + PREMIUM_ELITE
+    + LUXURY
+    + LUXURY_ELITE
+    + OVERSIZE
+    + SPECIAL
+}
+
+enum Type {
+    + TWO_THREE_DOOR
+    + TWO_OR_FOUR_DOOR
+    + FOUR_FIVE_DOOR
+    + WAGON_ESTATE
+    + PASSENGER_VAN
+    + LIMOUSINE
+    + SPORT
+    + CONVERTIBLE
+    + SUV
+    + OPEN_AIR_ALL_TERRAIN
+    + SPECIAL
+    + PICK_UP_REGULAR
+    + PICK_UP_EXTENDED
+    + SPECIAL_OFFER
+    + COUPE
+    + MONOSPACE
+    + RECREATIONAL_VEHICLE
+    + MOTOR_HOME
+    + TWO_WHEEL
+    + ROADSTER
+    + CROSSOVER
+    + COMMERCIAL_VAN
+}
+
+enum Transmission{
+    + MANUAL_UNSPECIFIED_DRIVE
+    + MANUAL_4WD
+    + MANUAL_AWD
+    + AUTO_UNSPECIFIED
+    + AUTO_4WD
+    + AUTO_AWD
+}
+
+enum Fuel {
+    + UNSPECIFIED
+    + DIESEL
+    + HYBRID
+    + ELECTRIC
+    + LPG
+    + HYDROGEN
+    + MULTI_FUEL
+    + PETROL
+    + ETHANOL
+}
+
+enum FareType{
+    + BASIC
+    + COMFORT
+    + ADVANCED
+    + PREMIUM
+}
+
+Account *-- User
+Account *-- AccountType
+Account *-- FareType
+User *-- Address
+
+Vehicle *-- Configuration
+Configuration *-- Type
+Configuration *-- Fuel
+Configuration *-- Transmission
+Configuration *-- Category
+Configuration *-- Equipment
+
+Reservation o-- Vehicle
+Reservation o-- Account
+
+@enduml

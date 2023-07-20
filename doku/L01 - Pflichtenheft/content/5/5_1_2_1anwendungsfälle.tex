@@ -1,0 +1,45 @@
+Der abstrakte Akteur \emph{Benutzer} hat in der Anwendung die Möglichkeit, seine bevorzugte Sprache auszuwählen.
+Somit haben alle weiteren Akteure ebenfalls die Möglichkeit dies zu tun.
+Dies ist in UC-3 wiedererkennbar. \medskip
+
+Beim Besuchen der Web-Anwendung haben alle Benutzer die Rolle eines Gastes inne.
+Der Akteur \emph{Gast} kann sich einloggen (UC1).
+An dem Login ist der Authentifizierungsdienstleister beteiligt.
+Des Weiteren kann ein Gast ein Mitgliedskonto anlegen (UC4).
+Dabei muss er einen der angebotenen Tarife auswählen (UC6).
+Außerdem ist hier die SCHUFA beteiligt, da über sie eine Bonitätsprüfung vorgenommen wird.
+Sofern es sich bei der erstellenden Person um ein Mitarbeiter handelt, kann ein Admin im Nachgang das Mitgliedskonto
+in ein Mitarbeitermitgliedskonto umwandeln (UC23).
+Dies ist im Diagramm durch den extension point \enquote{Mitarbeiter sein} beschrieben.
+Ein Mitgliedskonto kann vor Ort, in einer Filiale oder vom Gast selbst in der Web-Anwendung angelegt werden.
+Aufgrund der Ähnlichkeit der Prozesse, aber der Unterschiede in der Durchführung, haben wir uns für die Verwendung von Vererbung entschieden.
+Aus diesem Grund erben die Anwendungsfälle in Filiale anlegen (UC7), telefonisch anlegen (UC8) und Online anlegen (UC5) von \enquote{Mitgliedskonto anlegen}.
+Wird ein Konto vom \emph{Gast} selbst angelegt, so ist der \emph{Identifizierungsdienstleister} an dem Anwendungsfall beteiligt.
+Wird das Mitgliedskonto in einer Filiale angelegt, ist ein \emph{Mitarbeiter} an dem Anwendungsfall beteiligt.
+Dieser übernimmt auch die Identitätsprüfung. \medskip
+
+Der Akteur \emph{Registrierter Benutzer} unterscheidet sich von dem \emph{Gast}, indem er bereits registriert und angemeldet ist.
+Somit wird ein \emph{Gast} zu einem \emph{Registrierten Benutzer}, sobald er sich eingeloggt oder registriert hat.
+Zudem kann er jederzeit einen anderen Tarif wählen.
+Ein \emph{Registrierter Benutzer} kann sich außerdem ausloggen, wodurch er wieder zu einem Gast wird.
+Daran ist wiederum ein Authentifizierungsdienstleister beteiligt.
+Weiterhin kann er eine Buchung verwalten, dazu gehört es, eine Buchung einzusehen, eine neue Buchung zu machen
+und eine Buchung zu stornieren.
+Wenn eine Buchung storniert werden soll, der Tarif aber Stornierungskosten nicht abdeckt, so muss der Benutzer die
+Stornogebühr bezahlen.
+Bevor das \emph{Mitglied} eine neue Buchung erstellen (UC13) oder seine Mitgliedschaft kündigen (UC15) kann, muss es offene Rechnungen bezahlen (UC18).
+Die soeben genannten Fälle haben wir in dem Diagramm durch einen extension Point visualisiert.
+Beim Bezahlen ist der \emph{Zahlungsdienstleister} beteiligt.
+Zudem kann der \emph{Registrierte Benutzer} Mitgliedskontodaten verwalten (UC9) und Abrechnungen einsehen (UC12).
+Schließlich kann ein \emph{Registrierter Benutzer} im Umkreis nach verfügbaren Fahrzeugen suchen (UC10). \medskip
+
+Das \emph{Mitglied} kann eine reservierte Fahrt antreten (UC16) und diese abschließen (UC17).
+Des Weiteren kann das \emph{Mitglied} seine offenen Rechnungen bezahlen (UC18). \medskip
+
+Der \emph{Mitarbeiter} kann ein Fahrzeug verwalten (UC19).
+Darüber hinaus kann ein \emph{Mitarbeiter} Ausleihstationen verwalten (UC20).
+Ferner kann dieser den Fuhrpark verwalten (UC21).
+Zuletzt kann ein Mitarbeiter Fahrzeuginformationen erfassen (UC22). \medskip
+
+Der Akteur \emph{Admin} kann ein Mitgliedskonto zu einem Mitarbeitermitgliedskonto umwandeln (UC23)
+sowie Mitarbeiterzugänge verwalten (UC24).

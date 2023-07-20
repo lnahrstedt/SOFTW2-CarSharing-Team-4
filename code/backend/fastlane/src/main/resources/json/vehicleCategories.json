@@ -1,0 +1,74 @@
+﻿[
+  {
+    "id": "M",
+    "name": "Mini"
+  },
+  {
+    "id": "N",
+    "name": "Mini Elite"
+  },
+  {
+    "id": "E",
+    "name": "Economy"
+  },
+  {
+    "id": "H",
+    "name": "Economy Elite"
+  },
+  {
+    "id": "C",
+    "name": "Compact"
+  },
+  {
+    "id": "D",
+    "name": "Compact Elite"
+  },
+  {
+    "id": "I",
+    "name": "Intermediate"
+  },
+  {
+    "id": "J",
+    "name": "Intermediate Elite"
+  },
+  {
+    "id": "S",
+    "name": "Standard"
+  },
+  {
+    "id": "R",
+    "name": "Standard Elite"
+  },
+  {
+    "id": "F",
+    "name": "Fullsize"
+  },
+  {
+    "id": "G",
+    "name": "Fullsize Elite"
+  },
+  {
+    "id": "P",
+    "name": "Premium"
+  },
+  {
+    "id": "U",
+    "name": "Premium Elite"
+  },
+  {
+    "id": "L",
+    "name": "Luxury"
+  },
+  {
+    "id": "W",
+    "name": "Luxury Elite"
+  },
+  {
+    "id": "O",
+    "name": "Oversize"
+  },
+  {
+    "id": "X",
+    "name": "Special"
+  }
+]

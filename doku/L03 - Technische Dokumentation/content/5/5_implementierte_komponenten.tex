@@ -1,0 +1,102 @@
+Es wurden verschiedene Schnittstellen erstellt, um die Kommunikation mit dem Backend zu ermöglichen.
+Jede Schnittstelle bietet eine spezifische Funktion.
+Einige Schnittstellen werden in der aktuellen Version noch nicht von dem Frontend genutzt.
+Somit bietet das Backend einiges mehr an Funktionalität, welche in den kommenden Versionen von dem Frontend
+aufgegriffen wird.
+Um unbefugten Zugriff auf diese Schnittstellen zu verhindern,
+wurden Zugriffsrechte basierend auf den Rollen der Benutzer festgelegt.
+Die folgende Tabelle gibt einen Überblick über alle Schnittstellen und die Zugriffsrechte für die verschiedenen Rollen.
+Das \checkmark Symbol steht für vollen Zugriff,
+das \textcircled{} Symbol für Zugriff auf eigene Ressourcen des Nutzers und keine Markierung bedeutet keinen Zugriff.
+Die Rollen werden durch die Abkürzungen \enquote{A} für Admin,
+\enquote{M} für Mitarbeiter und \enquote{K} für Kunde dargestellt.
+
+\begin{xltabular}{\textwidth}{|l|l|X|c|c|c|}
+    \caption{Implementierte Schnittstellen} \label{tab:schnittpunkte}\\
+    \hline
+    \textbf{Methode} & \textbf{Endpunkt} & \textbf{Beschreibung} & \textbf{A} & \textbf{M} & \textbf{K} \\
+    \hline
+    \endfirsthead
+    \caption[]{Fortsetzung \enquote{Implementierte Schnittstellen}} \\
+    \hline
+    \textbf{Methode} & \textbf{Endpunkt} & \textbf{Beschreibung} & \textbf{A} & \textbf{M} & \textbf{K} \\
+    \hline
+    \endhead
+    \hline \multicolumn{6}{r}{$\hookrightarrow$} \\
+    \endfoot
+    \hline
+    \endlastfoot
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Account}} \\
+    \hline
+    GET & /account & Liefert alle Accounts. & $\checkmark$ & $\checkmark$ & \\
+    \hline
+    GET & /account/id/\{id\} & Liefert Account anhand der Id. & $\checkmark$ & $\checkmark$ & $\bigcirc$ \\
+    \hline
+    GET & /account/email/\{email\} & Liefert Account anhand der Email. & $\checkmark$ & $\checkmark$ & \\
+    \hline
+    GET & /account/exist/\{email\} & Überprüft, ob unter der Email bereits ein Account existiert. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    PATCH & /account/\{email\}/\{id\} & Erneuert den Account mit den übergebenen Werten. & $\checkmark$ & $\checkmark$ & $\bigcirc$ \\
+    \hline
+    DELETE & /account/\{id\} & Löscht den Account mit der angegebenen Id. & $\checkmark$ & $\checkmark$ & $\bigcirc$ \\
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Authentication}} \\
+    \hline
+    POST & /auth/login & Loggt den übergebenen Nutzer ein und liefert die Authentisierung. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Driver}} \\
+    \hline
+    GET & /driver/exist/\{licenseId\} & Überprüft, ob bereits ein Mitgliedskonto mit dieser Führerscheinnummer existiert. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    GET & /driver/user/\{userId\}/\{accountId\} & Liefert den Driver anhand der UserId. & $\checkmark$ & $\checkmark$ & $\bigcirc$ \\
+    \hline
+    PATCH & /driver/\{id\}/\{accountId\} & Erneuert den Driver mit den übergebenen Werten. & $\checkmark$ & $\checkmark$ & $\bigcirc$ \\
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Employee}} \\
+    \hline
+    GET & /employee & Liefert alle Employees. & $\checkmark$ & & \\
+    \hline
+    GET & /employee/\{id\} & Liefert Employee anhand der Id. & $\checkmark$ & & \\
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Health}} \\
+    \hline
+    GET & /health/ping & Liefert die aktuelle Zeit des Servers zurück. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    GET & /health/database & Überprüft den Status der Datenbank und liefert diesen zurück. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Registration}} \\
+    \hline
+    POST & /register/member & Ermöglicht die Registrierung eines Kunden. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    POST & /register/employee & Ermöglicht die Registrierung eines Mitarbeiters. & $\checkmark$ & & \\
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Reservation}} \\
+    \hline
+    GET & /reservation & Liefert alle Reservations. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    GET & /reservation/\{id\} & Liefert die Reservation anhand der Id. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    GET & /reservation/driver/\{driverId\} & Liefert alle Reservations des angegebenen Fahrers. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    POST & /reservation & Erstellt eine neue Reservation. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    PATCH & /reservation/\{id\} & Erneuert die Reservation mit den übergebenen Werten. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    DELETE & /reservation/\{id\} & Löscht die Reservation mit der angegebenen Id. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    \multicolumn{6}{|l|}{\textbf{Vehicle}} \\
+    \hline
+    GET & /vehicle & Liefert alle Vehicles. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    GET & /vehicle/\{id\} & Liefert das Vehicle anhand der Id. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    GET & /vehicle/free & Liefert alle freien Vehicles. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    GET & /vehicle/reservation/\{reservationId\} & Liefert das Vehicle, welches für die angegebene Reservation reserviert ist. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    PATCH & /vehicle/\{id\} & Erneuert das Vehicle mit den übergebenen Werten. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+    DELETE & /vehicle/\{id\} & Löscht das Vehicle mit der angegebenen Id. & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+    \hline
+\end{xltabular}

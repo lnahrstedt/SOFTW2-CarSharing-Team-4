@@ -1,0 +1,44 @@
+\subsubsection{Entity-Relationship-Diagramm}
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1\textwidth]{pictures/Fastlane-ERD}
+    \caption{Entity-Relationship-Diagramm}
+    \label{fig:ERD}
+\end{figure}
+
+\bigskip
+
+Das ER-Diagramm stellt die Entitäten und deren Relationen in der Datenbank des Systems dar.
+Sowohl ein \enquote{Employee} als auch ein \enquote{Driver} können auf dieselbe natürliche Person verweisen.
+Dies ermöglicht es, dass eine Person sowohl als Angestellter als auch als Fahrer agieren kann, je nach den Anforderungen und Rollen in diesem System.
+Durch diese flexible Gestaltung kann gewährleistet werden, dass die Benutzer verschiedene Rollen und Funktionen zugewiesen können, ohne dass separate Benutzerinstanzen erstellt werden müssen.
+Außerdem befindet sich die Datenbank in der dritten Normalform, was eine strukturierte und optimierte Speicherung der Daten gewährleistet.
+Durch die Verwendung zentraler Entitäten und die Vermeidung unnötiger Dubletten können Änderungen effizient an einer einzigen Stelle vorgenommen werden, was die Wartung und Verwaltung erleichtert und potenzielle Inkonsistenzen minimiert.
+
+\bigskip
+
+\subsubsection{Deployment-Diagramm}
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1\textwidth]{pictures/Fastlane_Deployment_Diagram}
+    \caption{Deployment-Diagramm}
+    \label{fig:Deployment-Diagram}
+\end{figure}
+
+\bigskip
+
+
+Das folgende Diagramm zeigt die Verteilung des Systems auf die verschiedenen Geräte und Ausführungsumgebungen.
+Die Flexibilität von Flutter ermöglicht es, die Frontend-Anwendungen in verschiedenen Ausführungsumgebungen auszuführen, was eine entsprechende Verteilung erforderlich macht.
+Die Backend-Anwendung wird auf einem dedizierten Server ausgeführt und stellt die Kernfunktionalität und Datenverarbeitung bereit.
+Um die Daten für den Webbrowser auf beliebigen Geräten bereitzustellen, wird ein Webserver verwendet, der die Daten per HTTPS liefert.
+In diesem Deployment-Diagramm wurde der Webbrowser auf einem Client-Device platziert, um die Ausführungsumgebung nicht doppelt auf dem Client-Computer und dem Client-Mobilgerät darstellen zu müssen.
+Die ausführbaren Dateien, die das Frontend enthalten, werden in den Ausführungsumgebungen der jeweiligen Geräte ausgeführt.
+Ein beispielhaftes Szenario zeigt die Ausführung der fastlane.apk auf einem Android-Gerät, das in der entsprechenden Umgebung auf einem Client-Mobilgerät läuft.
+Durch diese Verteilung der Komponenten auf die Geräte und Ausführungsumgebungen kann die Software plattformübergreifend genutzt werden, wobei jedes Gerät die spezifischen Anforderungen der jeweiligen Ausführungsumgebung erfüllen muss.
+
+\bigskip
+
+\subsubsection{Sequenz-Diagramm}
+\input{content/4/4_1_2_sequenzdiagramm}

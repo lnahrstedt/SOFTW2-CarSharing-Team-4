@@ -1,0 +1,21 @@
+-- SECURITY --
+GET base/login
+
+-- ACCOUNT --
+GET base/account/{id} - gibt spezifischen Account
+POST base/account - Account anlegen (ResponseBody)
+PATCH base/account/{id} - Accountdaten ändern (ResponseBody)
+DEL base/account/{id} - Löscht und archiviert Account
+
+-- RESERVATION --
+GET base/reservation - gibt alle Reservierungen
+GET base/reservation/account/{account_id} - gibt alle Reservierungen des Accounts
+POST base/reservation - legt Reservierung an (ResponseBody)
+PATCH base/reservation/{reservation_id} - Reservierung ändern (ResponseBody)
+DEL base/reservation/{reservation_id} - löscht spezifische Reservierung
+
+-- VEHICKEL --
+GET base/vehicle - gibt alle Fahrzeuge
+POST base/vehicle - legt neues Fahrzeug an (ResponseBody)
+PATCH base/vehicle/{id} - ändert Fahrzeugdaten (ResponseBody)
+DEL base/vehicle/{id} - löscht Fahrzeug

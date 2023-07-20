@@ -1,0 +1,19 @@
+Die primären Akteure repräsentieren die Nutzer der Anwendung und damit die unterschiedlichen Rollen mit verschiedenen Zugriffsrechten und Nutzungsintentionen.
+Von diesen haben wir sechs vorgesehen.
+Diese sind: \emph{Gast}, \emph{Benutzer}, \emph{Registrierter Benutzer}, \emph{Mitglied}, \emph{Mitarbeiter} und \emph{Admin}.
+Die primären Akteure in dem Diagramm unterliegen einer Vererbungshierarchie, die auf der Beziehung \enquote{ist-ein} basiert.
+Das bedeutet, dass bestimmte Akteure aus anderen Akteuren abgeleitet werden.
+Die höchste Stufe in der Hierarchie ist der abstrakte Akteur \emph{Benutzer}.
+Direkt unterhalb des abstrakten Benutzers gibt es zwei weitere Akteure.
+Den Gast und den ebenfalls abstrakten Akteur \emph{Registrierter Benutzer}.
+Diese Akteure erben alle Eigenschaften des abstrakten Akteurs \emph{Benutzer} und haben jeweils zusätzliche Funktionen und Berechtigungen.
+Aus dem abstrakten Akteur \emph{Registrierter Benutzer} leiten sich wiederum \emph{Mitglied} und \emph{Mitarbeiter} ab.
+Als spezieller Typ des Akteurs \emph{Mitarbeiter} erbt der \emph{Admin} alle Eigenschaften und Funktionen von \emph{Mitarbeiter}.
+Außerdem verfügt er über zusätzliche Berechtigungen und Funktionen, die es ihm ermöglichen, administrative Aufgaben auszuführen.
+
+\medskip
+
+Durch die Verwendung der Vererbung können gemeinsame Eigenschaften und Funktionen der Akteure effektiv verwaltet werden.
+Dies erleichtert die Implementierung und Wartung der Anwendung.
+Die Akteure \enquote{Benutzer} und \enquote{Registrierter Benutzer} sind abstrakt, weil sie in der Anwendung selbst nicht in Erscheinung treten, sondern ihre Erben Anwendungsfälle teilen und somit eine \enquote{Oder}-Beziehung dargestellt werden kann.
+Durch die Verwendung abstrakter Akteure können wir außerdem gemeinsam genutzte Anwendungsfälle der Erben zusammenfassen, ohne redundante oder unnötige Informationen in dem Anwendungsfalldiagramm darzustellen.

@@ -1,0 +1,15 @@
+usecase (Bezahlen) as BEZ
+usecase KUN as "Kündigen
+--
+**extension point**
+Offene Rechnungen"
+
+
+'------ Verbindungen ----------
+
+Mitglied -- BEZ
+Mitglied -- KUN
+Zahlungsdienstleister -- BEZ
+
+KUN ..> BEZ : " <<extends>>"
+BUS ..> BEZ : " <<extends>>"

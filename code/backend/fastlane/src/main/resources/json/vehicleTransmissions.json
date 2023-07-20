@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "M",
+    "name": "Manuell"
+  },
+  {
+    "id": "N",
+    "name": "Manual 4WD"
+  },
+  {
+    "id": "C",
+    "name": "Manual AWD"
+  },
+  {
+    "id": "A",
+    "name": "Automatik"
+  },
+  {
+    "id": "B",
+    "name": "Auto 4WD"
+  },
+  {
+    "id": "D",
+    "name": "Auto AWD"
+  }
+]

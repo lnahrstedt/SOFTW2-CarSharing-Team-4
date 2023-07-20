@@ -1,0 +1,14 @@
+usecase (Fuhrpark verwalten) as FUV
+'usecase (Fahrzeug hinzufügen) as FAH
+'usecase (Fahrzeug entfernen) as FAE
+'usecase (Fahrzeug bearbeiten) as FABE
+
+'------ Vererbungen ----------
+
+'FAH -up-|> FUV
+'FAE -up-|> FUV
+'FABE -up-|> FUV
+
+'------ Verbindungen ----------
+
+Mitarbeiter -- FUV

@@ -1,0 +1,68 @@
+\section{Auffinden der Anwendung}
+\label{sec:auffinden}
+
+Das Projekt mitsamt der Dokumentation ist in dem Git-Repository \enquote{SOFTW2 CarSharing Team 4} auf dem HSB Git-Server zu finden.
+Von dort kann dieses geklont werden.
+
+\section{Voraussetzungen}
+\label{sec:voraussetzungen}
+
+Für die Installation der Anwendung fastlane müssen folgende Voraussetzungen erfüllt sein, um eine problemfreie
+Nutzung zu garantieren.
+
+\subsection{Hardware}
+\label{subsec:hardware}
+
+Die Anwendung benötigt eine minimale Speicherkapazität von zwei Gigabyte.
+Allerdings empfiehlt es sich, mehr Speicherplatz zur Verfügung zu stellen, um die wachsende Größe der Datenbank
+zu unterstützen. \medskip
+
+Außerdem ist zu beachten, dass das Backend keine Geräte mit einer ARM-Architektur unterstützt.
+Dementsprechend sollte für die Ausführung ein Gerät mit einer anderen Architektur genutzt werden.
+
+\subsection{Software}
+\label{subsec:software}
+
+Das Backend und das Frontend werden in zwei separaten Dockercontainern ausgeführt.
+Dafür muss auf dem ausführendem Gerät Docker installiert sein.
+Die Anwendung wurde entwickelt und getestet mit der Dockerversion 4.21.1;
+auch wenn vermutlich ältere und neuere Versionen ebenfalls zu dem gewünschtem Ergebnis führen, können wir dies
+nicht garantieren. \medskip
+
+Damit der Webserver auch über eine öffentliche Adresse erreichbar ist, muss das ausführende
+Gerät den Port weiterleiten. \medskip
+
+Sollte eine Windows- oder Androidapplikation gebaut werden, fallen allerdings einige zusätzliche Forderungen an.
+In diesem Fall muss auf dem Gerät Flutter installiert sein.
+Hierbei wurde die Version 3.10.3 genutzt, die Unterstützung von älteren und neueren Versionen ist nicht garantiert.
+Für die Erstellung der Windowsanwendung muss außerdem Windows installiert sein.
+
+\section{Bauen der Anwendung}
+\label{sec:bauen}
+
+Das Backend und das Frontend kann getrennt gebaut werden.
+Für das Frontend liegt eine Dockerfile für den Bau des Images vor.
+Sollte das Backend unter einer anderen Adresse als localhost:8080 laufen, kann diese in der .env Datei
+gesetzt werden.
+Wird das Image für den Webserver ausgeführt, läuft der Service lokal im Container über den Port 80. \medskip
+
+Auch für das Backend liegt eine Dockerfile vor.
+Nachdem dieses ausgeführt wurde, läuft dieses lokal im Container und ist dort auf Port 8080 erreichbar. \medskip
+
+Für die Erstellung der Windows- oder Androidanwendung muss zu dem Verzeichnis code/frontend/fastlane navigiert werden
+und entweder der Befehl \enquote{flutter build windows -{-}release} oder \enquote{flutter build apk -{-}release} ausgeführt werden.
+Daraufhin wird die .exe oder .apk erstellt und kann auf andere Geräte verteilt werden.
+Wichtig ist hierbei nur, dass Adresse des Geräts auf dem das Backend läuft, eingegeben wurde.
+
+\section{Ausführen der Anwendung}
+\label{sec:ausfuehren}
+
+Für die Zusammenschaltung der beiden Anwendungen wurde eine docker-compose.yml beigelegt,
+welche bei Ausführung das Backend und das Frontend baut und startet.
+Sobald diese gestartet sind, ist das Backend über den Port 8080 und das Frontend über den Port 8081 auf dem ausführenden
+Gerät erreichbar.
+Die Konfiguration des Backends kann über die backend.properties Datei innerhalb des config Ordners verändert werden.
+Für die erste Darstellung liegen einige Beispieldaten vor, die bei dem Anstarten des Backends in die Datenbank
+gelesen wird.
+Sollten diese nicht erwünscht sein, kann der Wert von \enquote{load-demo-data} auf \enquote{false} gesetzt werden.
+Nach erneutem Ausführen der docker-compose.yml tritt diese Änderung in Kraft.

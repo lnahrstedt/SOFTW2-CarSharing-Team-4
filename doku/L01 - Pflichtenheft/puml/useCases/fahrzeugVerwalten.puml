@@ -1,0 +1,8 @@
+usecase (Fahrzeug verwalten) as FAV
+
+'------ Vererbungen ----------
+'(Fahrzeuginformationsdaten erfassen) -up-|> FAV
+
+'------ Verbindungen ----------
+
+Mitarbeiter -- FAV

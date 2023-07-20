@@ -1,0 +1,21 @@
+version: '1'
+services:
+  frontend:
+    image: fastlane_frontend:latest
+    build:
+      context: ./frontend/fastlane
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+
+  backend:
+    image: fastlane_backend:latest
+    build:
+      context: ./backend/fastlane
+      dockerfile: Dockerfile
+    volumes:
+      - ./config/backend.properties:/src/main/resources/application.properties
+    ports:
+      - "8080:8080"

@@ -1,0 +1,194 @@
+% Nicht angegebene Use Cases
+\subsubsection{Anforderungen ohne zugehörigem Anwendungsfall}
+    \begin{longtable}{|m{2cm}|m{6.5cm}|P{2.5cm}|P{2.5cm}|}
+            \hline
+        \textbf{ID}     & \textbf{Beschreibung} & \textbf{Verifikation} & \textbf{Status} \\
+        \hline
+        FA-1           & Es soll die Benutzerrolle Gast geben & I & muss \\
+        \hline
+        FA-2           & Es soll die Benutzerrolle Mitglied geben &  I & muss \\
+        \hline
+        FA-3           & Es soll die Benutzerrolle Mitarbeiter geben &  I & muss \\
+        \hline
+        FA-4           & Es soll die Benutzerrolle Admin geben &  I & muss \\
+        \hline
+        FA-5           & Mitgliedskonten dürfen nur angelegt werden, wenn die Person mindestens 18 Jahre alt ist &  T & soll\\
+        \hline
+        FA-6           & Die Anwendung soll über eine URL erreichbar sein &  T & soll \\
+        \hline
+        FA-7           & Abrechnungen sollen automatisch erstellt werden &  T & soll\\
+        \hline
+        FA-8           & Ein Mitglied soll mehrere Wagen gleichzeitig mieten können &  T & soll\\
+        \hline
+        FA-9           & Wenn ein Mitglied mehrere Wagen gleichzeitig mieten möchte, soll das System darauf hinweisen & T & soll\\
+        \hline
+        FA-10           & Es sollen keine weiteren Buchungen gemacht werden können, wenn das Mitglied im Zahlungsverzug ist &  T & soll\\
+        \hline
+        FA-11           & Es soll die Fahrzeugtypen Mini, Kleinwagen, Kompaktklasse, Mittelklasse, Oberklasse, Sportwagen, SUV, Van/Minivan und Cabrio/Roadster geben  & I & soll \\
+        \hline
+        FA-12           & Es soll die Tarifarten Basic, Ermäßigt und Exklusiv geben  & I & soll \\
+        \hline
+        FA-13           & Es soll die Stornierungsoptionen \enquote{Gebührenfrei},\enquote{mit Gebühren} und \enquote{nicht Möglich} geben  & I & soll \\
+        \hline
+        FA-14           & Es soll tarifabhängige km-Begrenzungen für Fahrten geben & T & soll \\
+        \hline
+        FA-15           & Es soll tarifabhängige Betankungsoptionen geben & T & soll \\
+        \hline
+        FA-16           & Für jüngere Fahrer soll aufgrund von erhöhten Versicherungskosten ein Preisaufschlag berechnet werden &  T & soll \\
+        \hline
+        FA-17           & Es soll Ermäßigungen für \enquote{Häufigbucher} geben &  T & soll \\
+        \hline
+        FA-18           & Es soll Ermäßigungen für Corporate Partner geben &  T & soll \\
+        \hline
+        FA-19           & Es soll akkubetriebene GPS-Tracker zur Ortung der Fahrzeuge geben &  I & soll \\
+        \hline
+        FA-20           & Der GPS-Tracker soll einen Stromsparmodus haben & I & soll \\
+        \hline
+        FA-21           & Der GPS-Tracker soll eine Alarmfunktion haben & I & soll \\
+        \hline
+        FA-22           & Jedes Fahrzeug soll zu jederzeit geortet werden können &  I & soll \\
+        \hline
+        FA-23           & Bei verspäteter Rückgabe eines Fahrzeugs wird ein Aufpreis berechnet &  T & soll \\
+        \hline
+        FA-24           & Bei vorzeitiger Rückgabe eines Fahrzeugs soll das Fahrzeug wieder verfügbar sein & T & soll \\
+        \hline
+        FA-25           & Das pdf-Preis-Leistungsverzeichnis soll herunterladbar sein &  T & soll \\
+        \hline
+        FA-26           & Das System könnte an das bestehende Buchhaltungssystem angebunden werden &  I & kann \\
+        \hline
+        FA-27           & Es wäre gut, wenn das Gesamtsystem für Adaption an verschiedene Orte und Länder ausgelegt wäre &  T & kann \\
+        \hline
+    \end{longtable}\label{tab:Funktionale Anforderungen6}
+%
+\subsubsection{Anforderungen mit einem zugehörigen Anwendugsfall}
+    \begin{longtable}{|m{1.5cm}|m{5.5cm}|P{3cm}|P{2cm}|P{1cm}|}
+        \hline
+        \textbf{ID}     & \textbf{Beschreibung} & \textbf{Anwendungsfall} & \textbf{Verifikation} & \textbf{Status} \\
+        \hline
+        FA-28           & Mitgliedskonten müssen vor Ort durch einen Mitarbeiter angelegt werden können & UC 7 & T & muss\\
+        \hline
+        FA-29        & Mitgliedskonten müssen durch einen Mitglied angelegt werden können & UC 4 & T & muss\\
+        \hline
+        FA-30           & Ein Admin muss Mitarbeiterzugänge anlegen können & UC 24 & T & muss\\
+        \hline
+        FA-31           & Ein Admin muss Mitarbeiterzugänge entfernen können & UC 24 & T & muss\\
+        \hline
+        FA-32           & Mitgliedsdaten(außer Kundennummer \& Identifikationsdaten) müssen durch einen Mitarbeiter geändert werden können & UC 9 & T & muss\\
+        \hline
+        FA-33           & Mitgliedsdaten(außer Kundennummer \& Identifikationsdaten) müssen durch ein Mitglied geändert werden können & UC 9 & T & muss\\
+        \hline
+        FA-34           & Ein Mitglied muss sich einloggen können & UC 1 & T & muss \\
+        \hline
+        FA-35           & Ein Mitarbeiter muss sich einloggen können & UC 1 & T & muss \\
+        \hline
+        FA-36           & Ein Admin muss sich einloggen können & UC 1 & T & muss \\
+        \hline
+        FA-37           & Ein Mitglied muss sich ausloggen können & UC 2 & T & muss \\
+        \hline
+        FA-38           & Ein Mitarbeiter muss sich ausloggen können & UC 2 & T & muss \\
+        \hline
+        FA-39           & Ein Admin muss sich ausloggen können & UC 2 & T & muss \\
+        \hline
+        FA-40           & Neue Buchungen müssen durch ein Mitglied erstellen werden können & UC 13 & T & muss \\
+        \hline
+        FA-41           & Neue Buchungen müssen durch einen Mitarbeiter erstellen werden können & UC 13 & T & muss \\
+        \hline
+        FA-42           & Buchungen müssen von einem Mitglied eingesehen werden können & UC 11 & T & muss \\
+        \hline
+        FA-43           & Buchungen müssen von einem Mitarbeiter eingesehen werden können & UC 11 & T & muss \\
+        \hline
+        FA-44           & Buchungen müssen von einem Mitglied storniert werden können & UC 14 & T & muss \\
+        \hline
+        FA-45           & Buchungen müssen von einem Mitarbeiter storniert werden können & UC 14 & T & muss \\
+        \hline
+        FA-46           & Ein Mitglied soll einen Tarif wählen können & UC 6 & T & muss \\
+        \hline
+        FA-47           & Ein Mitarbeiter soll für ein Mitglied einen Tarif wählen können & UC 6 & T & muss \\
+        \hline
+        FA-48           & Nur Mitglieder sollen Fahrzeuge ausleihen können & UC 16 & T & soll \\
+        \hline
+        FA-49           & Nur Mitglieder sollen Fahrzeuge zurückgeben können & UC 17 & T & soll \\
+        \hline
+        FA-50           & Ein Mitarbeiter soll Autos aus dem Fuhrpark bearbeiten können & UC 19 \& UC 21 & T & soll\\
+        \hline
+        FA-51           & Ein Mitarbeiter soll Autos aus dem Fuhrpark entfernen können & UC 21 & T & soll\\
+        \hline
+        FA-52           & Ein Mitglied soll Ausleihstationen einsehen können & UC 10 & T & soll \\
+        \hline
+        FA-53           & Ein Mitarbeiter soll Ausleihstationen hinzufügen können & UC 20 & T & soll \\
+        \hline
+        FA-54           & Ein Mitarbeiter soll Ausleihstationen einsehen können & UC 20 & T & soll \\
+        \hline
+        FA-55           & Ein Mitarbeiter soll Ausleihstationen bearbeiten können & UC 20 & T & soll \\
+        \hline
+        FA-56           & Ein Mitarbeiter soll Ausleihstationen entfernen können & UC 20 & T & soll \\
+        \hline
+        FA-57           & Buchungen müssen von einem Admin eingesehen werden können & UC 11 & T & muss \\
+        \hline
+        FA-58           & Abrechnungen sollen von einem Mitglied eingesehen werden können & UC 12 & T & soll\\
+        \hline
+        FA-59           & Abrechnungen von einem Mitglied sollen durch einen Mitarbeiter eingesehen werden können & UC 12 & T & soll\\
+        \hline
+        FA-60           & Es soll per PayPal gezahlt werden können & UC 18 & T & soll\\
+        \hline
+        FA-61           & Es soll per Kreditkarte gezahlt werden können & UC 18 & T & soll\\
+        \hline
+        FA-62           & Es soll per Direktüberweisung gezahlt werden können & UC 18 & T & soll\\
+        \hline
+        FA-63           & Es soll per Einzugsermächtigung gezahlt werden können & UC 18 & T & soll\\
+        \hline
+        FA-64           & Vergangene Buchungen sollen durch ein Mitglied einsehbar sein & UC 11 & T & soll\\
+        \hline
+        FA-65           & Vergangene Buchungen sollen durch einen Mitarbeiter einsehbar sein & UC 11 & T & soll\\
+        \hline
+        FA-66           & Kündigungen sollen nur bei einem beglichenen Konto möglich sein & UC 15 & T & soll\\
+        \hline
+        FA-67           & Ein Mitarbeiter soll Autos dem Fuhrpark hinzufügen können & UC 21 & T & soll\\
+        \hline
+        FA-68           & Buchungen müssen von einem Admin storniert werden können & UC 14 & T & muss \\
+        \hline
+        FA-69           & Vergangene Buchungen sollen durch einen Admin einsehbar sein & UC 11 & T & soll\\
+        \hline
+        FA-70           & Es soll Ermäßigungen für Mitarbeiter geben & UC 23 & T & soll \\
+        \hline
+        FA-71           & Ein Mitglied soll einen Standort auswählen können & UC 10 & T & soll \\
+        \hline
+        FA-72           & Ein Mitarbeiter soll einen Standort auswählen können & UC 10 & T & soll \\
+        \hline
+        FA-73           & Ein Mitglied soll gemäß des Standorts nach Fahrzeugen suchen können & UC 10 & T & soll \\
+        \hline
+        FA-74           & Ein Mitarbeiter soll gemäß des Standorts nach Fahrzeugen suchen können & UC 10 & T & soll \\
+        \hline
+        FA-75           & Wenn ein Mitglied nach Fahrzeugen gemäß des Standorts sucht, soll es möglich sein, den Umkreis nach x-km zu begrenzen & UC 10 & T & soll \\
+        \hline
+        FA-76           & Wenn ein Mitarbeiter nach Fahrzeugen gemäß des Standorts sucht, soll es möglich sein, den Umkreis nach x-km zu begrenzen & UC 10 & T & soll \\
+        \hline
+        FA-77           & Es soll spezielle Mitgliedskonten für Mitarbeiter geben & UC 23 & T & soll \\
+        \hline
+        FA-78           & Buchungen sollen von Mitgliedern in bestimmten Tarifen verlängert werden können & UC 11 & T & soll \\
+        \hline
+        FA-79           & Buchungen von Mitgliedern mit bestimmten Tarifen sollen durch Mitarbeiter verlängert werden können & UC 11 & T & soll \\
+        \hline
+        FA-80           & Ein Mitglied soll eine programmierbare Karte bekommen & UC 4 & T & soll \\
+        \hline
+        FA-81           & Ein Mitglied soll mit der erhaltenen Karte nur ein von ihm gebuchtes Fahrzeug öffnen können & UC 16 & T & soll \\
+        \hline
+        FA-82           & Ein Mitglied soll mit der erhaltenen Karte nur ein von ihm gebuchtes Fahrzeug schließen können & UC 17 & T & soll \\
+        \hline
+        FA-83           & Ein Mitarbeiter soll mit einer Karte alle Fahrzeuge öffnen können & UC 19 & T & soll \\
+        \hline
+        FA-84           & Ein Mitarbeiter soll mit einer Karte alle Fahrzeuge schließen können & UC 19 & T & soll \\
+        \hline
+        FA-85           & Die Bonität eines Mitglieds soll per SCHUFA geprüft werden & UC 4 & T & kann \\
+        \hline
+        FA-86           & Ein Gast soll zwischen mehreren Sprachen wählen können & UC 3 & T & kann \\
+        \hline
+        FA-87           & Die Identität eines Mitglieds soll per Postident-Verfahren geprüft werden & UC 5 \& UC 8 & T & kann \\
+        \hline
+        FA-88           & Es wäre gut, wenn Mitarbeiter Schadensmanagementdaten erfassen könnten & UC 22 & T & kann \\
+        \hline
+        FA-89           & Es wäre gut, wenn Mitarbeiter Reinigungsmanagementdaten erfassen könnten & UC 22 & T & kann \\
+        \hline
+        FA-90           & Es wäre gut, wenn Mitarbeiter Wartungsmanagementdaten erfassen könnten & UC 22 & T & kann \\
+        \hline
+    \end{longtable}\label{tab:Funktionale Anforderungen mit Use Case}

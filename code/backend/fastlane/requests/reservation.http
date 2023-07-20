@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:8080/reservation
+
+GET {{baseUrl}}
+
+
+###
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "vehicleId": "1",
+  "driverId": "2C3CK6CT4AH066987",
+  "price": 2.99,
+  "startDateTime": "2018-09-06T12:42:53.885",
+  "endDateTime": "2019-09-06T12:42:53.885"
+}
+
+
+###
+PATCH {{baseUrl}}/1
+
+###
+GET {{baseUrl}}/driver/2C3CK6CT4AH066987
+
+
+###
+DELETE {{baseUrl}}/5

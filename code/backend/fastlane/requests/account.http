@@ -1,0 +1,152 @@
+@registerMember = http://localhost:8080/register/member
+
+@registerEmployee = http://localhost:8080/register/employee
+
+@driver = http://localhost:8080/driver
+
+@login = http://localhost:8080/auth/login
+
+@account = http://localhost:8080/account
+
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGpkc3NAdGVzdC5kZSIsImlhdCI6MTY4ODQwMzYyNywiZXhwIjoxNjg4NDkwMDI3fQ.vlcZvddOB1KlQ3ssWEdZc_zDy4A_6hNn0yvoIr9yMlo
+
+@token2 = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkc3h5QHRlc3QuZGUiLCJpYXQiOjE2ODg0MDA0MzAsImV4cCI6MTY4ODQ4NjgzMH0.sm3NSgCIJXpX0bMywWyQJE7x_XQu9-vD9fW_9I5bex4
+
+
+###
+PATCH {{driver}}/15hdsjdsd/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "fareTypeName": "junior"
+}
+
+
+### Fetch all accounts
+### -> 200, empty List
+GET {{account}}/id/1
+Authorization: Bearer {{token}}
+
+###
+PATCH {{account}}/dsxy@test.de/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "email": "x@x.de"
+}
+
+
+### Fetch account 1
+### -> 404, account not found
+DELETE {{account}}/1
+Authorization: Bearer {{token2}}
+
+### Create an account
+### -> 201, account has been created
+POST {{registerMember}}
+Content-Type: application/json
+
+{
+  "id": "15hdsjdsd",
+  "typeName": "premium",
+  "email": "dhjdss@test.de",
+  "password": "cc",
+  "phone": "23423",
+  "firstName": "cdsc",
+  "lastName": "Pedster",
+  "dateOfBirth": "1970-01-01",
+  "placeOfBirth": "iii",
+  "street": "as 1",
+  "city": "sfsfsf",
+  "postalCode": "1234",
+  "countryCode": "AF"
+}
+
+###
+POST {{registerEmployee}}
+Content-Type: application/json
+
+{
+  "id": "gfg",
+  "typeName": "admin",
+  "email": "dsxy@test.de",
+  "password": "cc",
+  "phone": "23423",
+  "firstName": "cxc",
+  "lastName": "Peter",
+  "dateOfBirth": "1970-01-01",
+  "placeOfBirth": "iii",
+  "street": "as 1",
+  "city": "sfsfsf",
+  "postalCode": "1234",
+  "countryCode": "AF"
+}
+
+
+###
+POST {{login}}
+Content-Type: application/json
+
+{
+  "email": "x@x.de",
+  "password": "cc"
+}
+
+
+### Create another account
+### -> 201, account has been created
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "email": "Lukas@Nahrstedt.de",
+  "phone": "0178553764",
+  "accountType": {
+    "name": "EMPLOYEE"
+  },
+  "user": {
+    "firstName": "Max",
+    "lastName": "Musterfrau",
+    "dateOfBirth": "1971-01-01",
+    "address": {
+      "street": "Musterstraße 1",
+      "location": {
+        "city": {
+          "name": "Musterstadt"
+        },
+        "postalCode": {
+          "code": "1234"
+        },
+        "country": {
+          "code": "DE"
+        }
+      }
+    }
+  }
+}
+
+### Fetch account 1
+### -> 200, account found
+GET {{baseUrl}}/1
+
+### Fetch user-id of account 1
+### -> 200, 1
+GET {{baseUrl}}/1/user-id
+
+### Update details account 1
+### -> 200, updatedAccount
+PATCH {{baseUrl}}/1
+Content-Type: application/json
+
+{
+  "email": "Felix@Schiller.de",
+  "phone": "0422287543699",
+  "user": {
+    "id": 1
+  },
+  "accountType": {
+    "name": "ADMIN"
+  }
+}

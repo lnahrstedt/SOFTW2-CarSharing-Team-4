@@ -1,0 +1,94 @@
+﻿[
+  {
+    "id": "B",
+    "name": "2-3 Door (Zwei- bis Dreitürer)"
+  },
+  {
+    "id": "C",
+    "name": "2/4 Door (Zwei- oder Viertürer)"
+  },
+  {
+    "id": "D",
+    "name": "4-5 Door Car (Vier- bis Fünftürer)"
+  },
+  {
+    "id": "A",
+    "name": "Stadtflitzer"
+  },
+  {
+    "id": "R",
+    "name": "Racing"
+  },
+  {
+    "id": "W",
+    "name": "Kombi"
+  },
+  {
+    "id": "V",
+    "name": "Passenger Van"
+  },
+  {
+    "id": "L",
+    "name": "Limousine"
+  },
+  {
+    "id": "S",
+    "name": "Sportwagen"
+  },
+  {
+    "id": "T",
+    "name": "Cabriolet"
+  },
+  {
+    "id": "F",
+    "name": "SUV"
+  },
+  {
+    "id": "J",
+    "name": "Open Air All Terrain"
+  },
+  {
+    "id": "X",
+    "name": "Special"
+  },
+  {
+    "id": "P",
+    "name": "Pick-up Regular Cab"
+  },
+  {
+    "id": "Q",
+    "name": "Pick-up Extended Cab"
+  },
+  {
+    "id": "Z",
+    "name": "Special Offer Car"
+  },
+  {
+    "id": "E",
+    "name": "Coupe"
+  },
+  {
+    "id": "M",
+    "name": "Monospace"
+  },
+  {
+    "id": "H",
+    "name": "Wohnmobil"
+  },
+  {
+    "id": "Y",
+    "name": "2 Wheel Vehicle"
+  },
+  {
+    "id": "N",
+    "name": "Roadster"
+  },
+  {
+    "id": "G",
+    "name": "Crossover"
+  },
+  {
+    "id": "K",
+    "name": "Transporter"
+  }
+]

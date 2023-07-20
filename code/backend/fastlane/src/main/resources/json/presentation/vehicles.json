@@ -1,0 +1,1452 @@
+[
+  {
+    "brand": "VW",
+    "model": "Up",
+    "numberPlate": "91-B9-72-3D-41-BF",
+    "mileage": 845103,
+    "latitude": 53.5511,
+    "longitude": 9.9937,
+    "constructionYear": 2012,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "S"
+      },
+      "vehicleType": {
+        "id": "L"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "N"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Taigo",
+    "numberPlate": "08-C9-57-AE-A8-F9",
+    "mileage": 426716,
+    "latitude": 53.0982,
+    "longitude": 11.582,
+    "constructionYear": 2012,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "E"
+      },
+      "vehicleType": {
+        "id": "M"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "M"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Golf R",
+    "numberPlate": "A5-9B-6D-B0-27-5E",
+    "mileage": 858493,
+    "latitude": 53.0921,
+    "longitude": 8.8121,
+    "constructionYear": 1997,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "C"
+      },
+      "vehicleType": {
+        "id": "G"
+      },
+      "vehicleTransmission": {
+        "id": "A"
+      },
+      "vehicleFuel": {
+        "id": "X"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Passat",
+    "numberPlate": "AE-D8-0D-D0-33-7F",
+    "mileage": 37810,
+    "latitude": 53.0921,
+    "longitude": 8.8134,
+    "constructionYear": 1998,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "F"
+      },
+      "vehicleType": {
+        "id": "S"
+      },
+      "vehicleTransmission": {
+        "id": "D"
+      },
+      "vehicleFuel": {
+        "id": "F"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Touran",
+    "numberPlate": "5B-DE-14-DC-FA-5F",
+    "mileage": 659244,
+    "latitude": 48.7758,
+    "longitude": 8.8012,
+    "constructionYear": 2003,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "P"
+      },
+      "vehicleType": {
+        "id": "V"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "X"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "AMG C 63 S",
+    "numberPlate": "6E-2F-56-87-24-A6",
+    "mileage": 133327,
+    "latitude": 53.1108,
+    "longitude": 8.6821,
+    "constructionYear": 2002,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "P"
+      },
+      "vehicleType": {
+        "id": "F"
+      },
+      "vehicleTransmission": {
+        "id": "D"
+      },
+      "vehicleFuel": {
+        "id": "C"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "Maybach S 680",
+    "numberPlate": "01-5D-4B-B0-3B-45",
+    "mileage": 763349,
+    "latitude": 53.0952,
+    "longitude": 8.789,
+    "constructionYear": 1991,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "P"
+      },
+      "vehicleType": {
+        "id": "R"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "D"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "AMG G 63",
+    "numberPlate": "7B-61-64-30-D1-B0",
+    "mileage": 294276,
+    "latitude": 53.1082,
+    "longitude": 9.9937,
+    "constructionYear": 2004,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "E"
+      },
+      "vehicleType": {
+        "id": "H"
+      },
+      "vehicleTransmission": {
+        "id": "B"
+      },
+      "vehicleFuel": {
+        "id": "Q"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M3 Touring",
+    "numberPlate": "25-4C-CE-94-7B-F1",
+    "mileage": 178834,
+    "latitude": 53.1011,
+    "longitude": 12.3731,
+    "constructionYear": 2007,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "P"
+      },
+      "vehicleType": {
+        "id": "B"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "F"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M4 Competition",
+    "numberPlate": "89-C4-C3-53-01-39",
+    "mileage": 729164,
+    "latitude": 53.0926,
+    "longitude": 8.8146,
+    "constructionYear": 1987,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "U"
+      },
+      "vehicleType": {
+        "id": "N"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "N"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "1er",
+    "numberPlate": "C6-31-6B-BB-AD-54",
+    "mileage": 661532,
+    "latitude": 49.4521,
+    "longitude": 9.9937,
+    "constructionYear": 2012,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "X"
+      },
+      "vehicleType": {
+        "id": "J"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "U"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang Mach 1",
+    "numberPlate": "1E-8D-6E-02-74-DA",
+    "mileage": 26186,
+    "latitude": 53.1127,
+    "longitude": 8.8102,
+    "constructionYear": 2006,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "J"
+      },
+      "vehicleType": {
+        "id": "V"
+      },
+      "vehicleTransmission": {
+        "id": "A"
+      },
+      "vehicleFuel": {
+        "id": "B"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Revuelto",
+    "numberPlate": "55-58-ED-38-34-32",
+    "mileage": 383986,
+    "latitude": 53.1029,
+    "longitude": 8.8332,
+    "constructionYear": 1992,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "S"
+      },
+      "vehicleType": {
+        "id": "S"
+      },
+      "vehicleTransmission": {
+        "id": "A"
+      },
+      "vehicleFuel": {
+        "id": "V"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Urus",
+    "numberPlate": "9C-CE-10-80-92-DC",
+    "mileage": 454901,
+    "latitude": 53.1025,
+    "longitude": 11.582,
+    "constructionYear": 1984,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "F"
+      },
+      "vehicleType": {
+        "id": "X"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "N"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Crysler",
+    "model": "300 S",
+    "numberPlate": "FE-9F-36-15-5E-75",
+    "mileage": 508878,
+    "latitude": 51.2277,
+    "longitude": 8.8332,
+    "constructionYear": 2007,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "F"
+      },
+      "vehicleType": {
+        "id": "E"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "L"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Up",
+    "numberPlate": "AB-CF-77-2D-44-68",
+    "mileage": 172682,
+    "latitude": 53.1132,
+    "longitude": 8.8146,
+    "constructionYear": 1992,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "O"
+      },
+      "vehicleType": {
+        "id": "V"
+      },
+      "vehicleTransmission": {
+        "id": "B"
+      },
+      "vehicleFuel": {
+        "id": "C"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Taigo",
+    "numberPlate": "C5-05-31-40-90-53",
+    "mileage": 374667,
+    "latitude": 53.0921,
+    "longitude": 8.8015,
+    "constructionYear": 2000,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "R"
+      },
+      "vehicleType": {
+        "id": "K"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "L"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Golf R",
+    "numberPlate": "AB-83-EA-E0-36-79",
+    "mileage": 839699,
+    "latitude": 49.4521,
+    "longitude": 8.8189,
+    "constructionYear": 2011,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "S"
+      },
+      "vehicleType": {
+        "id": "N"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "M"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Passat",
+    "numberPlate": "38-4A-F7-3B-98-5D",
+    "mileage": 985276,
+    "latitude": 52.52,
+    "longitude": 9.1829,
+    "constructionYear": 2010,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "X"
+      },
+      "vehicleType": {
+        "id": "Q"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "F"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Touran",
+    "numberPlate": "02-56-EC-03-67-D2",
+    "mileage": 611068,
+    "latitude": 53.0952,
+    "longitude": 8.8332,
+    "constructionYear": 2003,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "W"
+      },
+      "vehicleType": {
+        "id": "R"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "Z"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "AMG C 63 S",
+    "numberPlate": "41-1A-20-BB-A3-C6",
+    "mileage": 389806,
+    "latitude": 53.0952,
+    "longitude": 13.405,
+    "constructionYear": 1995,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "N"
+      },
+      "vehicleType": {
+        "id": "Y"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "U"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "Maybach S 680",
+    "numberPlate": "80-23-C9-F6-AE-7C",
+    "mileage": 40843,
+    "latitude": 53.1029,
+    "longitude": 8.8373,
+    "constructionYear": 1999,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "G"
+      },
+      "vehicleType": {
+        "id": "Q"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "U"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "AMG G 63",
+    "numberPlate": "F1-E7-96-79-B3-26",
+    "mileage": 105876,
+    "latitude": 52.52,
+    "longitude": 8.8342,
+    "constructionYear": 2006,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "F"
+      },
+      "vehicleType": {
+        "id": "F"
+      },
+      "vehicleTransmission": {
+        "id": "B"
+      },
+      "vehicleFuel": {
+        "id": "F"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M3 Touring",
+    "numberPlate": "5B-53-80-1A-9F-83",
+    "mileage": 426638,
+    "latitude": 50.1109,
+    "longitude": 8.7984,
+    "constructionYear": 2012,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "G"
+      },
+      "vehicleType": {
+        "id": "V"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "Q"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M4 Competition",
+    "numberPlate": "D5-7B-22-10-95-90",
+    "mileage": 369971,
+    "latitude": 53.1029,
+    "longitude": 8.8373,
+    "constructionYear": 2004,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "E"
+      },
+      "vehicleType": {
+        "id": "X"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "E"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "1er",
+    "numberPlate": "95-17-6B-32-42-22",
+    "mileage": 243396,
+    "latitude": 53.1184,
+    "longitude": 8.8015,
+    "constructionYear": 2009,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "F"
+      },
+      "vehicleType": {
+        "id": "F"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "M"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang Mach 1",
+    "numberPlate": "5E-D0-BC-6A-3C-1B",
+    "mileage": 683469,
+    "latitude": 53.5511,
+    "longitude": 8.8267,
+    "constructionYear": 1996,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "U"
+      },
+      "vehicleType": {
+        "id": "S"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "S"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Revuelto",
+    "numberPlate": "80-5B-DC-96-E8-B2",
+    "mileage": 429005,
+    "latitude": 51.2277,
+    "longitude": 8.8026,
+    "constructionYear": 1991,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "S"
+      },
+      "vehicleType": {
+        "id": "V"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "V"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Urus",
+    "numberPlate": "68-50-82-13-9E-0F",
+    "mileage": 689593,
+    "latitude": 53.1082,
+    "longitude": 8.8259,
+    "constructionYear": 2005,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "H"
+      },
+      "vehicleType": {
+        "id": "W"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "R"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Crysler",
+    "model": "300 S",
+    "numberPlate": "49-7C-B6-EA-53-AF",
+    "mileage": 282284,
+    "latitude": 53.106,
+    "longitude": 14.4378,
+    "constructionYear": 1998,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "J"
+      },
+      "vehicleType": {
+        "id": "L"
+      },
+      "vehicleTransmission": {
+        "id": "B"
+      },
+      "vehicleFuel": {
+        "id": "Q"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Up",
+    "numberPlate": "F9-65-73-4B-25-5D",
+    "mileage": 579008,
+    "latitude": 53.0921,
+    "longitude": 8.839,
+    "constructionYear": 2000,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "J"
+      },
+      "vehicleType": {
+        "id": "H"
+      },
+      "vehicleTransmission": {
+        "id": "A"
+      },
+      "vehicleFuel": {
+        "id": "M"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Taigo",
+    "numberPlate": "44-B0-A5-2D-78-4D",
+    "mileage": 339017,
+    "latitude": 51.1657,
+    "longitude": 8.8132,
+    "constructionYear": 1993,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "R"
+      },
+      "vehicleType": {
+        "id": "M"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "N"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Golf R",
+    "numberPlate": "AD-D4-AF-FA-79-D0",
+    "mileage": 521062,
+    "latitude": 53.1025,
+    "longitude": 8.8228,
+    "constructionYear": 1996,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "F"
+      },
+      "vehicleType": {
+        "id": "H"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "C"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Passat",
+    "numberPlate": "7A-ED-D0-97-02-6B",
+    "mileage": 572424,
+    "latitude": 53.0823,
+    "longitude": 8.8373,
+    "constructionYear": 2002,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "W"
+      },
+      "vehicleType": {
+        "id": "C"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "F"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Touran",
+    "numberPlate": "4C-EB-F5-70-CE-A3",
+    "mileage": 712200,
+    "latitude": 53.1029,
+    "longitude": 6.7735,
+    "constructionYear": 2012,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "O"
+      },
+      "vehicleType": {
+        "id": "F"
+      },
+      "vehicleTransmission": {
+        "id": "D"
+      },
+      "vehicleFuel": {
+        "id": "N"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "AMG C 63 S",
+    "numberPlate": "F8-C5-79-A6-B3-D6",
+    "mileage": 751895,
+    "latitude": 49.4521,
+    "longitude": 8.6821,
+    "constructionYear": 2012,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "C"
+      },
+      "vehicleType": {
+        "id": "B"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "U"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "Maybach S 680",
+    "numberPlate": "34-3D-CB-FF-49-B7",
+    "mileage": 890107,
+    "latitude": 49.4521,
+    "longitude": 14.4378,
+    "constructionYear": 2010,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "P"
+      },
+      "vehicleType": {
+        "id": "M"
+      },
+      "vehicleTransmission": {
+        "id": "B"
+      },
+      "vehicleFuel": {
+        "id": "Q"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Mercedes",
+    "model": "AMG G 63",
+    "numberPlate": "55-22-F0-4A-3F-92",
+    "mileage": 632703,
+    "latitude": 48.1351,
+    "longitude": 11.582,
+    "constructionYear": 1994,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "N"
+      },
+      "vehicleType": {
+        "id": "S"
+      },
+      "vehicleTransmission": {
+        "id": "A"
+      },
+      "vehicleFuel": {
+        "id": "I"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M3 Touring",
+    "numberPlate": "85-1A-E0-10-EE-E7",
+    "mileage": 503777,
+    "latitude": 53.1025,
+    "longitude": 10.4515,
+    "constructionYear": 2007,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "L"
+      },
+      "vehicleType": {
+        "id": "T"
+      },
+      "vehicleTransmission": {
+        "id": "B"
+      },
+      "vehicleFuel": {
+        "id": "I"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M4 Competition",
+    "numberPlate": "5E-82-F4-3D-11-16",
+    "mileage": 193573,
+    "latitude": 53.1123,
+    "longitude": 9.9937,
+    "constructionYear": 2012,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "F"
+      },
+      "vehicleType": {
+        "id": "M"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "A"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "1er",
+    "numberPlate": "6D-45-FC-A3-F1-D4",
+    "mileage": 254936,
+    "latitude": 51.3397,
+    "longitude": 13.405,
+    "constructionYear": 2007,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "I"
+      },
+      "vehicleType": {
+        "id": "F"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "M"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang Mach 1",
+    "numberPlate": "3B-CF-72-1C-82-99",
+    "mileage": 122463,
+    "latitude": 53.1081,
+    "longitude": 8.8259,
+    "constructionYear": 2002,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "R"
+      },
+      "vehicleType": {
+        "id": "B"
+      },
+      "vehicleTransmission": {
+        "id": "A"
+      },
+      "vehicleFuel": {
+        "id": "Z"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Revuelto",
+    "numberPlate": "5F-A1-E1-B2-B1-8C",
+    "mileage": 108751,
+    "latitude": 53.1082,
+    "longitude": 8.8146,
+    "constructionYear": 2001,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "E"
+      },
+      "vehicleType": {
+        "id": "Q"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "E"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Urus",
+    "numberPlate": "9A-9F-FF-B7-3A-D2",
+    "mileage": 362348,
+    "latitude": 51.1657,
+    "longitude": 8.8189,
+    "constructionYear": 1994,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "G"
+      },
+      "vehicleType": {
+        "id": "B"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "E"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "Crysler",
+    "model": "300 S",
+    "numberPlate": "95-68-F2-AB-F2-4C",
+    "mileage": 295812,
+    "latitude": 53.0921,
+    "longitude": 11.0767,
+    "constructionYear": 2004,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "E"
+      },
+      "vehicleType": {
+        "id": "C"
+      },
+      "vehicleTransmission": {
+        "id": "D"
+      },
+      "vehicleFuel": {
+        "id": "F"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Up",
+    "numberPlate": "2E-B4-52-FB-5A-D7",
+    "mileage": 428838,
+    "latitude": 53.1081,
+    "longitude": 11.0767,
+    "constructionYear": 2002,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "I"
+      },
+      "vehicleType": {
+        "id": "E"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "Q"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": true,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Taigo",
+    "numberPlate": "68-A2-99-D4-DC-DF",
+    "mileage": 674456,
+    "latitude": 53.1082,
+    "longitude": 8.8026,
+    "constructionYear": 2006,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "G"
+      },
+      "vehicleType": {
+        "id": "P"
+      },
+      "vehicleTransmission": {
+        "id": "B"
+      },
+      "vehicleFuel": {
+        "id": "S"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": true,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": false
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Golf R",
+    "numberPlate": "46-0A-93-E4-DD-B5",
+    "mileage": 174030,
+    "latitude": 53.1011,
+    "longitude": 6.7735,
+    "constructionYear": 1995,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "N"
+      },
+      "vehicleType": {
+        "id": "G"
+      },
+      "vehicleTransmission": {
+        "id": "C"
+      },
+      "vehicleFuel": {
+        "id": "D"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Passat",
+    "numberPlate": "07-D3-20-52-7D-C9",
+    "mileage": 875773,
+    "latitude": 53.1081,
+    "longitude": 8.8146,
+    "constructionYear": 1998,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "G"
+      },
+      "vehicleType": {
+        "id": "B"
+      },
+      "vehicleTransmission": {
+        "id": "M"
+      },
+      "vehicleFuel": {
+        "id": "C"
+      },
+      "equipment": {
+        "hasAc": true,
+        "hasNavigation": false,
+        "hasCruiseControl": false,
+        "hasDrivingAssistant": true
+      }
+    }
+  },
+  {
+    "brand": "VW",
+    "model": "Touran",
+    "numberPlate": "7B-40-A9-32-8D-89",
+    "mileage": 875416,
+    "latitude": 49.4521,
+    "longitude": 8.829,
+    "constructionYear": 2009,
+    "configuration": {
+      "vehicleCategory": {
+        "id": "M"
+      },
+      "vehicleType": {
+        "id": "S"
+      },
+      "vehicleTransmission": {
+        "id": "N"
+      },
+      "vehicleFuel": {
+        "id": "I"
+      },
+      "equipment": {
+        "hasAc": false,
+        "hasNavigation": false,
+        "hasCruiseControl": true,
+        "hasDrivingAssistant": true
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "JUNIOR",
+    "price": 2.0
+  },
+  {
+    "name": "COMFORT",
+    "price": 1.5
+  },
+  {
+    "name": "PREMIUM",
+    "price": 1.0
+  }
+]

@@ -1,0 +1,29 @@
+
+@startuml Test"
+
+'------ Primäre Akteure ------
+
+actor Gast
+actor {abstract} Benutzer
+actor Mitglied
+actor Mitarbeiter
+actor Admin
+actor {abstract} Registrierter Benutzer
+
+
+'------ Sekundäre Akteure ------
+
+actor Zahlungsdienstleister
+actor Identifizierungsdienstleister
+actor Authentifizierungsdienstleister
+actor SCHUFA
+
+'------ Vererbungen ------
+
+Admin -up-|> Mitarbeiter
+Mitarbeiter -up-|> Registrierter Benutzer
+Mitglied -up-|> Registrierter Benutzer
+Registrierter Benutzer -up-|> Benutzer
+Gast -up-|> Benutzer
+
+@enduml
